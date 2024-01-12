@@ -1,0 +1,191 @@
+
+.state-name{
+    background-color: black;
+    /* color: white; */
+    padding: 4px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+}
+
+.abia-color-label{
+    background-color: #EBFDB5;
+}
+
+.abuja-color-label{
+    background-color:  #DFBBFE;
+}
+
+.adamawa-color-label{
+    background-color: #6B8E23;
+}
+
+
+
+.akwa_ibom-color-label{
+    background-color: #FEB8BB;
+}
+
+
+.anambra-color-label{
+    background-color: #B2F0FE;
+}
+
+.bauchi-color-label{
+    background-color: #FFC8F9;
+}
+
+
+.bayelsa-color-label{
+    background-color: #FDEAD1;
+}
+
+
+.benue-color-label{
+    background-color: #BA55D3;
+}
+
+
+.borno-color-label{
+    background-color: #d5dbff;
+}
+
+
+.cross_river-color-label{
+    background-color: #8B4513;
+}
+
+
+.delta-color-label{
+    background-color: #FCB3FF;
+}
+
+.ebonyi-color-label{
+    background-color: #FDB2D2;
+}
+
+
+.edo-color-label{
+    background-color: #CD5C5C;
+}
+
+
+.ekiti-color-label{
+    background-color: #ECFED5;
+}
+
+
+.enugu-color-label{
+    background-color: #00CED1;
+}
+
+
+.gombe-color-label{
+    background-color: #D6EFFD;
+}
+
+
+.imo-color-label{
+    background-color: #FDE9B9;
+}
+
+
+.jigawa-color-label{
+    background-color: #FDE9B9;
+}
+
+
+.kaduna-color-label{
+    background-color: #FECDC0;
+}
+
+.kano-color-label{
+    background-color: #B5DEFE;
+}
+
+
+.katsina-color-label{
+    background-color: #D2FEC8;
+}
+
+
+.kebbi-color-label{
+    background-color: #B7CDFE;
+}
+
+
+.kogi-color-label{
+    background-color: #708090;
+}
+
+
+
+.kwara-color-label{
+    background-color: #C7C4FE;
+}
+
+
+.lagos-color-label{
+    background-color: #FF4500;
+}
+
+
+
+.nassarawa-color-label{
+    background-color: #FAFEC5;
+}
+
+
+.niger-color-label{
+    background-color: #7FFF00;
+}
+
+
+.ogun-color-label{
+    background-color: #FEDAB8;
+}
+
+
+.ondo-color-label{
+    background-color: #FFFAF0;
+}
+
+
+
+.osun-color-label{
+    background-color: #D4FFB9;
+}
+
+
+.oyo-color-label{
+    background-color: #48D1CC;
+}
+
+
+.plateau-color-label{
+    background-color: #D6FEF8;
+}
+
+
+.rivers-color-label{
+    background-color: #EFC6FF;
+}
+
+
+.sokoto-color-label{
+    background-color: #FEF9D5;
+}
+
+
+.taraba-color-label{
+    background-color: #B4FEE9;
+}
+
+
+.yobe-color-label{
+    background-color: #0000CD;
+}
+
+
+.zamfara-color-label{
+    background-color: #FFB2DF;
+}
