@@ -149,7 +149,7 @@ body{
 	/* background: rebeccapurple; */
     background-position: center;
     background-repeat: no-repeat;
-    animation: waveAnimation 2s ease-in-out infinite;
+    /* animation: waveAnimation 2s ease-in-out infinite; */
 }
 
 
@@ -172,8 +172,9 @@ body{
     /* display flex prevent the scroll bar from working */
     display: grid;
     justify-content: center;
-    align-items: center;
-    background-color: #fdfdfd;
+    align-items: flex-end;
+    gap: 16px;
+    background-color: #fffefe;
 }
 
 
@@ -181,9 +182,11 @@ body{
 
 .dragable-div{
     background-color: rgb(173, 205, 206);
-    margin: 4px;
     padding: 0px;
 }
+
+
+
 
 
 #footer{
@@ -196,6 +199,8 @@ body{
     background-color: #d9dada;
     color: rgb(99, 99, 99);
 }
+
+
 
 @media all and (max-width: 768px) {
     /* #container{    

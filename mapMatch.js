@@ -233,6 +233,7 @@ benueStateId.addEventListener('drop', (e)=>{
 
 
 
+
 bornoStateId.addEventListener('drop', (e)=>{
     e.preventDefault()
     const bornoStateName = bornoStateId.getAttribute('name')
@@ -1925,12 +1926,6 @@ function addConfetti() {
   }
 
 
-  
-
-
-
-
-
 // count down function
 let timerInterval;
 
@@ -1990,7 +1985,7 @@ let timerInterval;
      }
  }
 
- console.log(dragDivs)
+//  console.log(dragDivs)
 
- shuffleItems()
+//  shuffleItems()
 
