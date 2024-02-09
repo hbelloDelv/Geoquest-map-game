@@ -30,7 +30,8 @@
   fill: #BA55D3
 }
 .borno_color{
-  fill: #d5dbff
+  /* fill: #df2ec7; */
+  fill: #d5dbff;
 }
 
 .cross_river_color{
@@ -78,7 +79,7 @@
 }
 
 .katsina_color{
-  fill: #D2FEC8
+  fill: #be8a60
 }
 
 .kebbi_color{
@@ -94,11 +95,11 @@
 }
 
 .lagos_color{
-  fill: #FF4500;
+  fill: #f2a442
 }
 
 .nassarawa_color{
-  fill: #FAFEC5
+  fill: #ffdd64
 }
 
 .niger_color{
@@ -110,11 +111,11 @@
 }
 
 .ondo_color{
-  fill: #FFFAF0
+  fill: #e69f11
 }
 
 .osun_color{
-  fill: #D4FFB9
+  fill: #9af661
 }
 
 .oyo_color{
@@ -122,7 +123,7 @@
 }
 
 .plateau_color{
-  fill: #D6FEF8
+  fill: #a8d59e
 }
 
 .rivers_color{
@@ -130,11 +131,11 @@
 }
 
 .sokoto_color{
-  fill: #FEF9D5
+  fill: #ffdd76
 }
 
 .taraba_color{
-  fill: #B4FEE9
+  fill: #d1374d
 }
 
 .yobe_color{
