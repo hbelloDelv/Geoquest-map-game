@@ -1,7 +1,6 @@
 import{
     allStatesTiles, eachStateMap,
 
-
     abiaStateId, abujaStateId, adamawaStateId, akwa_ibomStateId, anambraStateId,
     bauchiStateId, bayelsaStateId, benueStateId, bornoStateId, cross_riverStateId,
     deltaStateId, ebonyiStateId, edoStateId, ekitiStateId, enuguStateId, gombeStateId,
@@ -908,7 +907,7 @@ let timerInterval;
 
 
 
- // RESET BUTTON 
+//  RESET BUTTON 
  const ResetButton = document.getElementById('reset-button');
  ResetButton.addEventListener('click', ()=>{
      location.reload()

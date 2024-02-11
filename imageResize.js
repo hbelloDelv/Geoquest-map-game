@@ -40,314 +40,236 @@
 }
 
 
-   
+const images = {
+   abia: new Image(),
+   abuja: new Image(),
+   adamawa: new Image(),
+   akwaibom: new Image(),
+   anambra: new Image(),
+   bauchi: new Image(),
+   bayelsa: new Image(),
+   benue:  new Image(),
+   borno: new Image(),
+   crossriver: new Image(),
+   delta: new Image(),
+   ebonyi: new Image(),
+   edo:  new Image(),
+   ekiti: new Image(),
+   enugu: new Image(),
+   gombe: new Image(),
+   imo:  new Image(),
+   jigawa: new Image(),
+   kaduna: new Image(),
+   kano:  new Image(),
+   katsina: new Image(),
+   kebbi: new Image(),
+   kogi:  new Image(),
+   kwara:  new Image(),
+   lagos:   new Image(),
+   nassarawa:   new Image(),
+   niger: new Image(),
+   ogun:  new Image(),
+   ondo: new Image(),
+   osun:  new Image(),
+   oyo:  new Image(),
+   plateau: new Image(),
+   rivers:  new Image(),
+   sokoto: new Image(),
+   taraba:   new Image(),
+   yobe:    new Image(),
+   zamfara: new Image(),
+};
+
+
+
+// the images are preloaded, so they appear immediately when dragged.
+images.abia.src = "./resized-images/abia.png";
+images.abuja.src = "./resized-images/abuja.png";
+images.adamawa.src = "./resized-images/adamawa.png";
+images.akwaibom.src = "./resized-images/akwa_ibom.png";
+images.anambra.src = "./resized-images/anambra.png";
+images.bauchi.src = "./resized-images/bauchi.png";
+images.bayelsa.src = "./resized-images/bayelsa.png";
+images.benue.src = "./resized-images/benue.png";
+images.borno.src =  "./resized-images/borno.png";
+images.crossriver.src = "./resized-images/cross_river.png";
+images.delta.src =  "./resized-images/delta.png";
+images.ebonyi.src = "./resized-images/ebonyi.png";
+images.edo.src = "./resized-images/edo.png";
+images.ekiti.src = "./resized-images/ekiti.png";
+images.enugu.src = "./resized-images/enugu.png";
+images.gombe.src =  "./resized-images/gombe.png";
+images.imo.src =  "./resized-images/imo.png";
+images.jigawa.src =  "./resized-images/jigawa.png";
+images.kaduna.src = "./resized-images/kaduna.png";
+images.kano.src = "./resized-images/kano.png";
+images.katsina.src =  "./resized-images/katsina.png";
+images.kebbi.src = "./resized-images/kebbi.png";
+images.kogi.src = "./resized-images/kogi.png";
+images.kwara.src = "./resized-images/kwara.png";
+images.lagos.src =  "./resized-images/lagos.png";
+images.nassarawa.src = "./resized-images/nassarawa.png";
+images.niger.src =  "./resized-images/niger.png";
+images.ogun.src = "./resized-images/ogun.png";
+images.ondo.src = "./resized-images/ondo.png";
+images.osun.src = "./resized-images/osun.png";
+images.oyo.src = "./resized-images/oyo.png";
+images.plateau.src = "./resized-images/plateau.png";
+images.rivers.src = "./resized-images/rivers.png";
+images.sokoto.src = "./resized-images/sokoto.png";
+images.taraba.src = "./resized-images/taraba.png";
+images.yobe.src = "./resized-images/yobe.png";
+images.zamfara.src = "./resized-images/zamfara.png";
+
+
 
 
 resizeImage.abia.addEventListener('dragstart',(e)=>{
-   const img = new Image();
-   img.src = "./resized-images/abia.png";
-   e.dataTransfer.setDragImage(img, 28, 30);
-   console.log(img)
-})
+   e.dataTransfer.setDragImage(images.abia, 28, 30);
+});
 
-
-// Abuja not working
 resizeImage.abuja.addEventListener('dragstart',(e)=>{
-   
-   const img = new Image();
-   img.src = "./resized-images/abuja.png";
-   e.dataTransfer.setDragImage(img, 60, 60);
-   console.log(img)
-})
-
-
+   e.dataTransfer.setDragImage(images.abuja, 60, 60);
+});
 
 resizeImage.adamawa.addEventListener('dragstart',(e)=>{
-   const img = new Image();
-   img.src = "./resized-images/adamawa.png";
-   e.dataTransfer.setDragImage(img, 60, 100);
-   console.log(img)
-})
-
+   e.dataTransfer.setDragImage(images.adamawa, 60, 100)
+});
 
 resizeImage.akwaibom.addEventListener('dragstart',(e)=>{
-   const img = new Image();
-   img.src = "./resized-images/akwa_ibom.png";
-   e.dataTransfer.setDragImage(img, 30, 50);
-   console.log(img)
-})
-
-
+   e.dataTransfer.setDragImage(images.akwaibom,30, 50)
+});
 
 resizeImage.anambra.addEventListener('dragstart',(e)=>{
-   const img = new Image();
-   img.src = "./resized-images/anambra.png";
-   e.dataTransfer.setDragImage(img, 30, 20);
-   console.log(img)
-})
-
+   e.dataTransfer.setDragImage(images.anambra, 30, 20)
+});
 
 resizeImage.bauchi.addEventListener('dragstart',(e)=>{
-   const img = new Image();
-   img.src = "./resized-images/bauchi.png";
-   e.dataTransfer.setDragImage(img, 90, 110);
-   console.log(img)
+   e.dataTransfer.setDragImage(images.bauchi, 90, 110);
 })
-
-
 
 resizeImage.bayelsa.addEventListener('dragstart',(e)=>{
-   const img = new Image();
-   img.src = "./resized-images/bayelsa.png";
-   e.dataTransfer.setDragImage(img, 60, 80);
-   console.log(img)
+   e.dataTransfer.setDragImage(images.bayelsa, 60, 80);
 })
-
-
 
 resizeImage.benue.addEventListener('dragstart',(e)=>{
-   
-   const img = new Image();
-   img.src = "./resized-images/benue.png";
-   e.dataTransfer.setDragImage(img, 90, 70);
-   console.log(img)
+   e.dataTransfer.setDragImage(images.benue, 90, 70);
 })
-
 
 resizeImage.borno.addEventListener('dragstart',(e)=>{
-   const img = new Image();
-   img.src = "./resized-images/borno.png";
-   e.dataTransfer.setDragImage(img, 110, 90);
-   console.log(img)
+   e.dataTransfer.setDragImage(images.borno, 110, 90);
 })
-
-// NOT AVAILABLE YET
 
 resizeImage.crossriver.addEventListener('dragstart',(e)=>{
-   const img = new Image();
-   img.src = "./resized-images/cross_river.png";
-   e.dataTransfer.setDragImage(img, 80, 80);
-   console.log(img)
+   e.dataTransfer.setDragImage(images.crossriver, 80, 80);
 })
-
 
 resizeImage.delta.addEventListener('dragstart',(e)=>{
-   const img = new Image();
-   img.src = "./resized-images/delta.png";
-   e.dataTransfer.setDragImage(img, 90, 90);
-   console.log(img)
+   e.dataTransfer.setDragImage(images.delta, 90, 90);
 })
-
 
 resizeImage.ebonyi.addEventListener('dragstart',(e)=>{
-   const img = new Image();
-   img.src = "./resized-images/ebonyi.png";
-   e.dataTransfer.setDragImage(img, 60, 40);
-   console.log(img)
+   e.dataTransfer.setDragImage(images.ebonyi, 60, 40);
 })
 
-
 resizeImage.edo.addEventListener('dragstart',(e)=>{
-   const img = new Image();
-   img.src = "./resized-images/edo.png";
-   e.dataTransfer.setDragImage(img, 80, 80);
-   console.log(img)
+   e.dataTransfer.setDragImage(images.edo, 80, 80);
 })
 
 resizeImage.ekiti.addEventListener('dragstart',(e)=>{
-   const img = new Image();
-   img.src = "./resized-images/ekiti.png";
-   e.dataTransfer.setDragImage(img, 50, 50);
-   console.log(img)
+   e.dataTransfer.setDragImage(images.ekiti, 50, 50);
 })
 
-
-
 resizeImage.enugu.addEventListener('dragstart',(e)=>{
-   const img = new Image();
-   img.src = "./resized-images/enugu.png";
-   e.dataTransfer.setDragImage(img, 50, 50);
-   console.log(img)
+   e.dataTransfer.setDragImage(images.enugu, 50, 50);
 })
 
 resizeImage.gombe.addEventListener('dragstart',(e)=>{
-   const img = new Image();
-   img.src = "./resized-images/gombe.png";
-   e.dataTransfer.setDragImage(img, 70, 70);
-   console.log(img)
+   e.dataTransfer.setDragImage(images.gombe, 70, 70);
 })
-
 
 resizeImage.imo.addEventListener('dragstart',(e)=>{
-   const img = new Image();
-   img.src = "./resized-images/imo.png";
-   e.dataTransfer.setDragImage(img, 70, 50);
-   console.log(img)
+   e.dataTransfer.setDragImage(images.imo, 70, 50);
 })
-
-
 
 resizeImage.jigawa.addEventListener('dragstart',(e)=>{
-   const img = new Image();
-   img.src = "./resized-images/jigawa.png";
-   e.dataTransfer.setDragImage(img, 80, 60);
-   console.log(img)
+   e.dataTransfer.setDragImage(images.jigawa, 80, 60);
 })
-
 
 resizeImage.kaduna.addEventListener('dragstart',(e)=>{
-   const img = new Image();
-   img.src = "./resized-images/kaduna.png";
-   e.dataTransfer.setDragImage(img, 80, 60);
-   console.log(img)
+   e.dataTransfer.setDragImage(images.kaduna, 80, 60);
 })
 
-
 resizeImage.kano.addEventListener('dragstart',(e)=>{
-   const img = new Image();
-   img.src = "./resized-images/kano.png";
-   e.dataTransfer.setDragImage(img, 80, 60);
-   console.log(img)
+   e.dataTransfer.setDragImage(images.kano, 80, 60);
 })
 
 resizeImage.katsina.addEventListener('dragstart',(e)=>{
-   const img = new Image();
-   img.src = "./resized-images/katsina.png";
-   e.dataTransfer.setDragImage(img, 50, 50);
-   console.log(img)
+   e.dataTransfer.setDragImage(images.katsina, 50, 50);
 })
-
-
 
 resizeImage.kebbi.addEventListener('dragstart',(e)=>{
-   const img = new Image();
-   img.src = "./resized-images/kebbi.png";
-   e.dataTransfer.setDragImage(img, 60, 60);
-   console.log(img)
+   e.dataTransfer.setDragImage(images.kebbi, 60, 60);
 })
-
 
 resizeImage.kogi.addEventListener('dragstart',(e)=>{
-   const img = new Image();
-   img.src = "./resized-images/kogi.png";
-   e.dataTransfer.setDragImage(img, 50, 50);
-   console.log(img)
+   e.dataTransfer.setDragImage(images.kogi, 50, 50);
 })
-
 
 resizeImage.kwara.addEventListener('dragstart',(e)=>{
-   const img = new Image();
-   img.src = "./resized-images/kwara.png";
-   e.dataTransfer.setDragImage(img, 50, 50);
-   console.log(img)
+   e.dataTransfer.setDragImage(images.kwara, 50, 50);
 })
-
 
 resizeImage.lagos.addEventListener('dragstart',(e)=>{
-   const img = new Image();
-   img.src = "./resized-images/lagos.png";
-   e.dataTransfer.setDragImage(img, 60, 30);
-   console.log(img)
+   e.dataTransfer.setDragImage(images.lagos, 60, 30);
 })
-
 
 resizeImage.nassarawa.addEventListener('dragstart',(e)=>{
-   const img = new Image();
-   img.src = "./resized-images/nassarawa.png";
-   e.dataTransfer.setDragImage(img, 60, 60);
-   console.log(img)
+   e.dataTransfer.setDragImage(images.nassarawa, 60, 60);
 })
-
-
-
 
 resizeImage.niger.addEventListener('dragstart',(e)=>{
-   const img = new Image();
-   img.src = "./resized-images/niger.png";
-   e.dataTransfer.setDragImage(img, 100, 100);
-   console.log(img)
+   e.dataTransfer.setDragImage(images.niger, 100, 100);
 })
-
-
 
 resizeImage.ogun.addEventListener('dragstart',(e)=>{
-   const img = new Image();
-   img.src = "./resized-images/ogun.png";
-   e.dataTransfer.setDragImage(img, 60, 70);
-   console.log(img)
+   e.dataTransfer.setDragImage(images.ogun, 60, 70);
 })
 
-
 resizeImage.ondo.addEventListener('dragstart',(e)=>{
-   const img = new Image();
-   img.src = "./resized-images/ondo.png";
-   e.dataTransfer.setDragImage(img, 60, 60);
-   console.log(img)
+   e.dataTransfer.setDragImage(images.ondo, 60, 60);
 })
 
 resizeImage.osun.addEventListener('dragstart',(e)=>{
-   const img = new Image();
-   img.src = "./resized-images/osun.png";
-   e.dataTransfer.setDragImage(img, 60, 60);
-   console.log(img)
+   e.dataTransfer.setDragImage(images.osun, 60, 60);
 })
-
 
 resizeImage.oyo.addEventListener('dragstart',(e)=>{
-   const img = new Image();
-   img.src = "./resized-images/oyo.png";
-   e.dataTransfer.setDragImage(img, 80, 80);
-   console.log(img)
+   e.dataTransfer.setDragImage(images.oyo, 80, 80);
 })
 
-
 resizeImage.plateau.addEventListener('dragstart',(e)=>{
-   const img = new Image();
-   img.src = "./resized-images/plateau.png";
-   e.dataTransfer.setDragImage(img, 80, 80);
-   console.log(img)
+   e.dataTransfer.setDragImage(images.plateau, 80, 80);
 })
 
 resizeImage.rivers.addEventListener('dragstart',(e)=>{
-   const img = new Image();
-   img.src = "./resized-images/rivers.png";
-   e.dataTransfer.setDragImage(img, 60, 60);
-   console.log(img)
+   e.dataTransfer.setDragImage(images.rivers, 60, 60);
 })
-
-
 
 resizeImage.sokoto.addEventListener('dragstart',(e)=>{
-   const img = new Image();
-   img.src = "./resized-images/sokoto.png";
-   e.dataTransfer.setDragImage(img, 80, 80);
-   console.log(img)
+   e.dataTransfer.setDragImage(images.sokoto, 80, 80);
 })
-
 
 resizeImage.taraba.addEventListener('dragstart',(e)=>{
-   const img = new Image();
-   img.src = "./resized-images/taraba.png";
-   e.dataTransfer.setDragImage(img, 80, 80);
-   console.log(img)
+   e.dataTransfer.setDragImage(images.taraba, 80, 80);
 })
-
 
 resizeImage.yobe.addEventListener('dragstart',(e)=>{
-   const img = new Image();
-   img.src = "./resized-images/yobe.png";
-   e.dataTransfer.setDragImage(img, 90, 90);
-   console.log(img)
+   e.dataTransfer.setDragImage(images.yobe, 90, 90);
 })
-
-
 
 resizeImage.zamfara.addEventListener('dragstart',(e)=>{
-   const img = new Image();
-   img.src = "./resized-images/zamfara.png";
-   e.dataTransfer.setDragImage(img, 90, 90);
-   console.log(img)
+   e.dataTransfer.setDragImage(images.zamfara, 90, 90);
 })
-
 
 
