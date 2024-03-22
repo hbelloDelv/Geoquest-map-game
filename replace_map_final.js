@@ -1,12 +1,15 @@
 // replace the map with this when game finish
+
+
 export function replaceDiv() {
     // Create a new div
-    var newDiv = document.createElement('div');
+    let newDiv = document.createElement('div');
 
      // Add CSS styles to center newDiv
      newDiv.style.display = 'flex';
      newDiv.style.justifyContent = 'center';
      newDiv.style.alignItems = 'center';
+    //  newDiv.style.backgroundColor = 'red'
 
     var mapPhoto = document.createElement('img');
     mapPhoto.src = './nigMapPhoto.png'

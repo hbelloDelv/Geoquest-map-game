@@ -11,11 +11,19 @@ import{
 
 }  from './each_SVG_State_ID.js'
 
-import {match, unMatch, totalMatch, totalUnMatch} from './match_unmatch_functions.js';
+import {match, unMatch, totalMatch, totalUnMatch} from './match_unmatch_scores.js';
+import {startCountdown} from './Timer.js'
 import {cheerMe} from './cheer_me.js'
 import {dragDivs, removeSingleNode} from './remove_map_when_match.js'
-import {shuffleMaps} from './shuffle_maps_functions.js'
+import {shuffleMaps} from './shuffle_maps_functions.js';
+// import displayAlertBox from './alertBox.js'
+import {ResetButton} from './resetMap.js'
 
+
+
+
+// PLEASE ACTIVE THIS MODULE BEFOR DEPLOYMENT
+// import {disablecontextMenu} from './disableMapContextMenu.js'
 
 
 // prevent default state of not allowing element to be over it
@@ -866,51 +874,7 @@ zamfaraStateId.addEventListener('drop', (e)=>{
 
 
 
-// count down function
-let timerInterval;
-
- export   function startCountdown() {
-      let timeSelect = document.getElementById("timeSelect");
-      let countdown = timeSelect.value;
-
-      // Disable the select menu to prevent changing the time
-      timeSelect.disabled = true;
-
-      timerInterval = setInterval(function() {
-        let minutes = Math.floor(countdown / 60);
-        let seconds = countdown % 60;
-
-        // Display the countdown in the format MM:SS within the dropdown
-        timeSelect.options[timeSelect.selectedIndex].text = minutes + ":" + (seconds < 10 ? "0" : "") + seconds;
-
-        // Reduce the countdown by 1 second
-        countdown--;
-
-        // If the countdown reaches 0, reload the browser
-        if (countdown < 0) {
-          clearInterval(timerInterval);
-          // Enable the select menu after the countdown finishes
-          timeSelect.disabled = false;
-          location.reload();
-        }
-      }, 1000);
-    }
 
 
-
-
-    // Add an event listener to start the countdown when a new time is selected
-    document.getElementById("timeSelect").addEventListener("change", function() {
-      clearInterval(timerInterval); // Clear the previous interval if any
-      startCountdown();
-    });
-
-
-
-//  RESET BUTTON 
- const ResetButton = document.getElementById('reset-button');
- ResetButton.addEventListener('click', ()=>{
-     location.reload()
- })
-
+// The index file must load before the maps is reshufle
 shuffleMaps()

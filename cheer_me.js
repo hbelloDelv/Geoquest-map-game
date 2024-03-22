@@ -92,6 +92,9 @@ export const cheerMe = {
     winsound: './sound/winsound.mp3',
     retrysound: './sound/retrysound.mp3',
     rollDrum: './sound/finishingDrum.mp3',
+    warning_sound: './sound/warningSound.mp3',
+    alertTillEndSound: './sound/10sec_countdown.mp3',
+    time_up_Sound: './sound/time_up_out.mp3',
 
 
     stateOneCheers: function () {
@@ -545,4 +548,18 @@ export const cheerMe = {
         const retrySound = new Audio(this.rollDrum)
         retrySound.play()
     },
+
+    warning: function() {
+        const soundWarning = new Audio(this.warning_sound)
+        soundWarning.play()
+    },
+
+    alertEndofGame: function() {
+        const soundGameEnding = new Audio(this.alertTillEndSound)
+        soundGameEnding.play()
+    }
 }
+
+
+// cheerMe.warning();
+// cheerMe.alertEndofGame()

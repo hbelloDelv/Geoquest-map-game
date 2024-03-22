@@ -4,10 +4,12 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/party-js@latest/bundle/party.min.js"></script>
+    <link rel="icon" href="./assets/icon.png">
     <link rel="stylesheet" href="./style.css">
     <link rel="stylesheet" href="./states-color-svg.css">
     <link rel="stylesheet" href="state-label-bycolor.css">
-    <title>Map | Game</title>
+    <title>Geoquest</title>
 </head>
 <body>
     <div id="container">
@@ -15,19 +17,13 @@
             <div id="left-section">
                <div id="map-menu">
                   <div class="timer menu-item">
-                     <!-- <div id="show-time">05:00</div> -->
-                     <div id="timer-div">
-                        <select id="timeSelect">
-                           <option value="">start</option>
-                           <option value="300">5:00</option>
-                           <!-- <option value="240">4:00</option>
-                           <option value="180">3:00</option>
-                           <option value="120">2:00</option>
-                           <option value="60">1:00</option> -->
-                         </select>
+                     <div id="show-time-div">
+                        05:00
                      </div>
-
-                     <div class="label">Timer</div>
+                     
+                     <div class="startBtn-div">
+                        <button id="startBtn">Start</button>
+                     </div>
                   </div>
 
                   <div class="match menu-item">
@@ -294,20 +290,12 @@
                     <!-- to be continue -->
             </div>
         </div>
-        <div id="state-modal">
-            <div id="closeBox">
-                <button id="closeButton">X</button>
-            </div>
-            <div id="state-info">
-                <div id="state-name-div">
-                    <!-- text dynamically added -->
-                </div>
-            </div>
-        </div>
+
         <div id="footer">
-            Jamitan Tech Nigeria Ltd &copy;
+            <a href="https://www.jamitan.com/" target="_blank">Jamitan Tech Nigeria Ltd &copy;</a>
         </div>   
     </div>
     <script src="index.js" type="module"></script>
     <script src="./imageResize.js"></script>
+    <!-- <script src="node_modules/confetti-js/dist/index.min.js"></script> -->
 </html>
