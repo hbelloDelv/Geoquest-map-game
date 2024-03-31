@@ -6,7 +6,7 @@ import {replaceDiv} from './replace_map_final.js';
 
 
 // //// WORKING ON IT ///////////////////
-import {enable_disableDragTile} from './enable_disableTile.js'
+import {disableDragMap, enableDisableDragMap} from './enable_disableTile.js'
 
 
 
@@ -40,11 +40,19 @@ function startCountdown() {
             alertTiming()
         }
 
-    }, 1000); // Update every second
+        
+      }, 1000); // Update every second
     
 }
 
-document.getElementById("startBtn").addEventListener("click", startCountdown);
+
+// Now when you remove the event listener, use the same reference
+document.getElementById("startBtn").addEventListener("click", function() {
+  startCountdown();
+  enableDisableDragMap()
+});
+
+
 
 
 // WORKING CODE ////////////////////////
@@ -94,8 +102,7 @@ function alertTiming() {
 
 
 
-
-// enable_disableDragTile(timeLeft)
+window.addEventListener('load', disableDragMap)
 
 
 

@@ -22,7 +22,7 @@ import {ResetButton} from './resetMap.js'
 
 
 ////////////// TESTING ///////////////////////
-import {enable_disableDragTile} from './enable_disableTile.js'
+// import {enable_disableDragTile} from './enable_disableTile.js'
 
 
 // PLEASE ACTIVE THIS MODULE BEFOR DEPLOYMENT
