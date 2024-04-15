@@ -125,55 +125,55 @@ images.zamfara.src = "./resized-images/zamfara.png";
 
 
 resizeImage.abia.addEventListener('dragstart',(e)=>{
-   e.dataTransfer.setDragImage(images.abia, 28, 30);
+   e.dataTransfer.setDragImage(images.abia, 50, 50);
 });
 
 resizeImage.abuja.addEventListener('dragstart',(e)=>{
-   e.dataTransfer.setDragImage(images.abuja, 60, 60);
+   e.dataTransfer.setDragImage(images.abuja, 50, 50);
 });
 
 resizeImage.adamawa.addEventListener('dragstart',(e)=>{
-   e.dataTransfer.setDragImage(images.adamawa, 60, 100)
+   e.dataTransfer.setDragImage(images.adamawa, 50, 50)
 });
 
 resizeImage.akwaibom.addEventListener('dragstart',(e)=>{
-   e.dataTransfer.setDragImage(images.akwaibom,30, 50)
+   e.dataTransfer.setDragImage(images.akwaibom, 50, 50)
 });
 
 resizeImage.anambra.addEventListener('dragstart',(e)=>{
-   e.dataTransfer.setDragImage(images.anambra, 30, 20)
+   e.dataTransfer.setDragImage(images.anambra, 50, 50)
 });
 
 resizeImage.bauchi.addEventListener('dragstart',(e)=>{
-   e.dataTransfer.setDragImage(images.bauchi, 90, 110);
+   e.dataTransfer.setDragImage(images.bauchi, 50, 50);
 })
 
 resizeImage.bayelsa.addEventListener('dragstart',(e)=>{
-   e.dataTransfer.setDragImage(images.bayelsa, 60, 80);
+   e.dataTransfer.setDragImage(images.bayelsa, 50, 50);
 })
 
 resizeImage.benue.addEventListener('dragstart',(e)=>{
-   e.dataTransfer.setDragImage(images.benue, 90, 70);
+   e.dataTransfer.setDragImage(images.benue, 50, 50);
 })
 
 resizeImage.borno.addEventListener('dragstart',(e)=>{
-   e.dataTransfer.setDragImage(images.borno, 110, 90);
+   e.dataTransfer.setDragImage(images.borno, 50, 50);
 })
 
 resizeImage.crossriver.addEventListener('dragstart',(e)=>{
-   e.dataTransfer.setDragImage(images.crossriver, 80, 80);
+   e.dataTransfer.setDragImage(images.crossriver, 50, 50);
 })
 
 resizeImage.delta.addEventListener('dragstart',(e)=>{
-   e.dataTransfer.setDragImage(images.delta, 90, 90);
+   e.dataTransfer.setDragImage(images.delta, 50, 50);
 })
 
 resizeImage.ebonyi.addEventListener('dragstart',(e)=>{
-   e.dataTransfer.setDragImage(images.ebonyi, 60, 40);
+   e.dataTransfer.setDragImage(images.ebonyi, 50, 50);
 })
 
 resizeImage.edo.addEventListener('dragstart',(e)=>{
-   e.dataTransfer.setDragImage(images.edo, 80, 80);
+   e.dataTransfer.setDragImage(images.edo, 50, 50);
 })
 
 resizeImage.ekiti.addEventListener('dragstart',(e)=>{
@@ -185,23 +185,23 @@ resizeImage.enugu.addEventListener('dragstart',(e)=>{
 })
 
 resizeImage.gombe.addEventListener('dragstart',(e)=>{
-   e.dataTransfer.setDragImage(images.gombe, 70, 70);
+   e.dataTransfer.setDragImage(images.gombe, 50, 50);
 })
 
 resizeImage.imo.addEventListener('dragstart',(e)=>{
-   e.dataTransfer.setDragImage(images.imo, 70, 50);
+   e.dataTransfer.setDragImage(images.imo, 50, 50);
 })
 
 resizeImage.jigawa.addEventListener('dragstart',(e)=>{
-   e.dataTransfer.setDragImage(images.jigawa, 80, 60);
+   e.dataTransfer.setDragImage(images.jigawa, 50, 50);
 })
 
 resizeImage.kaduna.addEventListener('dragstart',(e)=>{
-   e.dataTransfer.setDragImage(images.kaduna, 80, 60);
+   e.dataTransfer.setDragImage(images.kaduna, 50, 50);
 })
 
 resizeImage.kano.addEventListener('dragstart',(e)=>{
-   e.dataTransfer.setDragImage(images.kano, 80, 60);
+   e.dataTransfer.setDragImage(images.kano, 50, 50);
 })
 
 resizeImage.katsina.addEventListener('dragstart',(e)=>{
@@ -209,7 +209,7 @@ resizeImage.katsina.addEventListener('dragstart',(e)=>{
 })
 
 resizeImage.kebbi.addEventListener('dragstart',(e)=>{
-   e.dataTransfer.setDragImage(images.kebbi, 60, 60);
+   e.dataTransfer.setDragImage(images.kebbi, 50, 50);
 })
 
 resizeImage.kogi.addEventListener('dragstart',(e)=>{
@@ -221,55 +221,55 @@ resizeImage.kwara.addEventListener('dragstart',(e)=>{
 })
 
 resizeImage.lagos.addEventListener('dragstart',(e)=>{
-   e.dataTransfer.setDragImage(images.lagos, 60, 30);
+   e.dataTransfer.setDragImage(images.lagos, 50, 50);
 })
 
 resizeImage.nassarawa.addEventListener('dragstart',(e)=>{
-   e.dataTransfer.setDragImage(images.nassarawa, 60, 60);
+   e.dataTransfer.setDragImage(images.nassarawa, 50, 50);
 })
 
 resizeImage.niger.addEventListener('dragstart',(e)=>{
-   e.dataTransfer.setDragImage(images.niger, 100, 100);
+   e.dataTransfer.setDragImage(images.niger, 50, 50);
 })
 
 resizeImage.ogun.addEventListener('dragstart',(e)=>{
-   e.dataTransfer.setDragImage(images.ogun, 60, 70);
+   e.dataTransfer.setDragImage(images.ogun, 50, 50);
 })
 
 resizeImage.ondo.addEventListener('dragstart',(e)=>{
-   e.dataTransfer.setDragImage(images.ondo, 60, 60);
+   e.dataTransfer.setDragImage(images.ondo, 50, 50);
 })
 
 resizeImage.osun.addEventListener('dragstart',(e)=>{
-   e.dataTransfer.setDragImage(images.osun, 60, 60);
+   e.dataTransfer.setDragImage(images.osun, 50, 50);
 })
 
 resizeImage.oyo.addEventListener('dragstart',(e)=>{
-   e.dataTransfer.setDragImage(images.oyo, 80, 80);
+   e.dataTransfer.setDragImage(images.oyo, 50, 50);
 })
 
 resizeImage.plateau.addEventListener('dragstart',(e)=>{
-   e.dataTransfer.setDragImage(images.plateau, 80, 80);
+   e.dataTransfer.setDragImage(images.plateau, 50, 50);
 })
 
 resizeImage.rivers.addEventListener('dragstart',(e)=>{
-   e.dataTransfer.setDragImage(images.rivers, 60, 60);
+   e.dataTransfer.setDragImage(images.rivers, 50, 50);
 })
 
 resizeImage.sokoto.addEventListener('dragstart',(e)=>{
-   e.dataTransfer.setDragImage(images.sokoto, 80, 80);
+   e.dataTransfer.setDragImage(images.sokoto, 50, 50);
 })
 
 resizeImage.taraba.addEventListener('dragstart',(e)=>{
-   e.dataTransfer.setDragImage(images.taraba, 80, 80);
+   e.dataTransfer.setDragImage(images.taraba, 50, 50);
 })
 
 resizeImage.yobe.addEventListener('dragstart',(e)=>{
-   e.dataTransfer.setDragImage(images.yobe, 90, 90);
+   e.dataTransfer.setDragImage(images.yobe, 50, 50);
 })
 
 resizeImage.zamfara.addEventListener('dragstart',(e)=>{
-   e.dataTransfer.setDragImage(images.zamfara, 90, 90);
+   e.dataTransfer.setDragImage(images.zamfara, 50, 50);
 })
 
 

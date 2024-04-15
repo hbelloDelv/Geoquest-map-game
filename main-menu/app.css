@@ -71,7 +71,7 @@
 
 
 .menu-btn:hover{
-   background-color: #6df8df;
+   background-color: #daf8f3;
 }
 
 .level-type-wrapper{
@@ -90,4 +90,24 @@
     justify-content: center;
     align-items: center;
     /* background-color: red; */
+}
+
+.welcome-text-div > img{
+    animation: geoquestAnimation 3s ease-in;
+}
+
+
+@keyframes geoquestAnimation {
+    0%{
+        transform: rotate(100deg)
+    }
+    25%{
+        transform: rotate(50deg)
+    }
+    50%{
+        transform: rotate(25deg)
+    }
+    100%{
+        transform: rotate(0deg)
+    }
 }

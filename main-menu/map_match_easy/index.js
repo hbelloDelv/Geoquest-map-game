@@ -11,18 +11,25 @@ import{
 
 }  from './each_SVG_State_ID.js'
 
-import {match, unMatch, totalMatch, totalUnMatch} from './match_unmatch_scores.js';
+// import {match, unMatch, totalMatch, totalUnMatch} from './match_unmatch_scores.js';
+import {match, unMatch, totalMatch, totalUnMatch, countStatesRemaing, statesRemaining} from './match_unmatch_scores.js';
+
 import {startCountdown} from './Timer.js'
 import {cheerMe} from './cheer_me.js'
 import {dragDivs, removeSingleNode} from './remove_map_when_match.js'
 import {shuffleMaps} from './shuffle_maps_functions.js';
-// import displayAlertBox from './alertBox.js'
 import {ResetButton} from './resetMap.js'
 
+/////////// TESTING CODE ////////////////////////
+// import alertBoxGameOver from './alertBox_gameOver.js'
+// import alertBoxGoodJob from './alertBox_goodJob.js'
+import alertBoxPerfectRun from './alertBox_perfectRun.js'
 
 
-////////////// TESTING ///////////////////////
-// import {enable_disableDragTile} from './enable_disableTile.js'
+let countNumberSates = document.querySelector('.number-of-states')
+countNumberSates.innerHTML = statesRemaining
+
+
 
 
 // PLEASE ACTIVE THIS MODULE BEFOR DEPLOYMENT
@@ -62,6 +69,8 @@ abiaStateId.addEventListener('drop', (e)=>{
                     matchDiv.innerText = totalMatch;
                     // disableAbiaState()
                     removeSingleNode(dragDivs, 0);
+                    countStatesRemaing()
+                    countNumberSates.innerHTML = statesRemaining
                 }
                 else{
                     unMatch()
@@ -86,6 +95,8 @@ abujaStateId.addEventListener('drop', (e)=>{
                     matchDiv.innerText = totalMatch;
                     // disableAujaState()
                     removeSingleNode(dragDivs, 1);
+                    countStatesRemaing()
+                    countNumberSates.innerHTML = statesRemaining
                 }
                 else{
                     unMatch()
@@ -108,6 +119,8 @@ adamawaStateId.addEventListener('drop', (e)=>{
                     matchDiv.innerText = totalMatch;
                     // disableAdamawaState()
                     removeSingleNode(dragDivs, 2);
+                    countStatesRemaing()
+                    countNumberSates.innerHTML = statesRemaining
                 }
                 else{
                     unMatch()
@@ -132,6 +145,8 @@ akwa_ibomStateId.addEventListener('drop', (e)=>{
                     matchDiv.innerText = totalMatch;
                     // disableAkwa_IbomState()
                     removeSingleNode(dragDivs, 3);
+                    countStatesRemaing()
+                    countNumberSates.innerHTML = statesRemaining
                 }
                 else{
                     unMatch()
@@ -152,8 +167,9 @@ anambraStateId.addEventListener('drop', (e)=>{
                     cheerMe.stateFiveCheers()
                     const matchDiv = document.getElementById('match')
                     matchDiv.innerText = totalMatch;
-                    // disableAnambraState()
                     removeSingleNode(dragDivs, 4);
+                    countStatesRemaing()
+                    countNumberSates.innerHTML = statesRemaining
                 }
                 else{
                     unMatch()
@@ -174,8 +190,9 @@ bauchiStateId.addEventListener('drop', (e)=>{
                     cheerMe.stateSixCheers()
                     const matchDiv = document.getElementById('match')
                     matchDiv.innerText = totalMatch;
-                    // disableBauchiState();
                     removeSingleNode(dragDivs, 5);
+                    countStatesRemaing()
+                    countNumberSates.innerHTML = statesRemaining
                 }
                 else{
                     unMatch()
@@ -196,8 +213,9 @@ bayelsaStateId.addEventListener('drop', (e)=>{
                     cheerMe.stateSevenCheers()
                     const matchDiv = document.getElementById('match')
                     matchDiv.innerText = totalMatch;
-                    // disableBayelsaState()
                     removeSingleNode(dragDivs, 6);
+                    countStatesRemaing()
+                    countNumberSates.innerHTML = statesRemaining
                 }
                 else{
                     unMatch()
@@ -219,8 +237,9 @@ benueStateId.addEventListener('drop', (e)=>{
                     cheerMe.stateEightCheers()
                     const matchDiv = document.getElementById('match')
                     matchDiv.innerText = totalMatch;
-                    // disableBenueState()
                     removeSingleNode(dragDivs, 7);
+                    countStatesRemaing()
+                    countNumberSates.innerHTML = statesRemaining
                 }
                 else{
                     unMatch()
@@ -243,8 +262,9 @@ bornoStateId.addEventListener('drop', (e)=>{
                     cheerMe.stateNineCheers()
                     const matchDiv = document.getElementById('match')
                     matchDiv.innerText = totalMatch;
-                    // disableBornoState()
                     removeSingleNode(dragDivs, 8);
+                    countStatesRemaing()
+                    countNumberSates.innerHTML = statesRemaining
                 }
                 else{
                     unMatch()
@@ -265,8 +285,9 @@ cross_riverStateId.addEventListener('drop', (e)=>{
                     cheerMe.stateTenCheers()
                     const matchDiv = document.getElementById('match')
                     matchDiv.innerText = totalMatch;
-                    // disableCross_RiverState()
                     removeSingleNode(dragDivs, 9);
+                    countStatesRemaing()
+                    countNumberSates.innerHTML = statesRemaining
                 }
                 else{
                     unMatch()
@@ -287,8 +308,9 @@ deltaStateId.addEventListener('drop', (e)=>{
                     cheerMe.stateElevenCheers()
                     const matchDiv = document.getElementById('match')
                     matchDiv.innerText = totalMatch;
-                    // disableDeltaState()
                     removeSingleNode(dragDivs, 10);
+                    countStatesRemaing()
+                    countNumberSates.innerHTML = statesRemaining
                 }
                 else{
                     unMatch()
@@ -309,8 +331,9 @@ ebonyiStateId.addEventListener('drop', (e)=>{
                     cheerMe.stateTwelveCheers()
                     const matchDiv = document.getElementById('match')
                     matchDiv.innerText = totalMatch;
-                    // disableEbonyiState();
                     removeSingleNode(dragDivs, 11);
+                    countStatesRemaing()
+                    countNumberSates.innerHTML = statesRemaining
                 }
                 else{
                     unMatch()
@@ -331,8 +354,9 @@ edoStateId.addEventListener('drop', (e)=>{
                     cheerMe.stateThirteenCheers()
                     const matchDiv = document.getElementById('match')
                     matchDiv.innerText = totalMatch;
-                    // disableEdoState();
                     removeSingleNode(dragDivs, 12);
+                    countStatesRemaing()
+                    countNumberSates.innerHTML = statesRemaining
                 }
                 else{
                     unMatch()
@@ -353,8 +377,9 @@ ekitiStateId.addEventListener('drop', (e)=>{
                     cheerMe.stateFourteenCheers()
                     const matchDiv = document.getElementById('match')
                     matchDiv.innerText = totalMatch;
-                    // disableEkitiState()
                     removeSingleNode(dragDivs, 13);
+                    countStatesRemaing()
+                    countNumberSates.innerHTML = statesRemaining
                 }
                 else{
                     unMatch()
@@ -375,8 +400,9 @@ enuguStateId.addEventListener('drop', (e)=>{
                     cheerMe.stateFifteenCheers()
                     const matchDiv = document.getElementById('match')
                     matchDiv.innerText = totalMatch;
-                    // disableEnuguState()
                     removeSingleNode(dragDivs, 14);
+                    countStatesRemaing()
+                    countNumberSates.innerHTML = statesRemaining
                 }
                 else{
                     unMatch()
@@ -397,8 +423,9 @@ gombeStateId.addEventListener('drop', (e)=>{
                     cheerMe.stateSixteenCheers()
                     const matchDiv = document.getElementById('match')
                     matchDiv.innerText = totalMatch;
-                    // disableGombeState()
                     removeSingleNode(dragDivs, 15);
+                    countStatesRemaing()
+                    countNumberSates.innerHTML = statesRemaining
                 }
                 else{
                     unMatch()
@@ -420,8 +447,9 @@ imoStateId.addEventListener('drop', (e)=>{
                     cheerMe.stateSeventeenCheers()
                     const matchDiv = document.getElementById('match')
                     matchDiv.innerText = totalMatch;
-                    // disableImoState()
                     removeSingleNode(dragDivs, 16);
+                    countStatesRemaing()
+                    countNumberSates.innerHTML = statesRemaining
                 }
                 else{
                     unMatch()
@@ -442,8 +470,9 @@ jigawaStateId.addEventListener('drop', (e)=>{
                     cheerMe.stateEighteenCheers()
                     const matchDiv = document.getElementById('match')
                     matchDiv.innerText = totalMatch;
-                    // disableJigawaState()
                     removeSingleNode(dragDivs, 17);
+                    countStatesRemaing()
+                    countNumberSates.innerHTML = statesRemaining
                 }
                 else{
                     unMatch()
@@ -464,8 +493,9 @@ kadunaStateId.addEventListener('drop', (e)=>{
                     cheerMe.stateNineteenCheers()
                     const matchDiv = document.getElementById('match')
                     matchDiv.innerText = totalMatch;
-                    // disableKadunaState()
                     removeSingleNode(dragDivs, 18);
+                    countStatesRemaing()
+                    countNumberSates.innerHTML = statesRemaining
                 }
                 else{
                     unMatch()
@@ -486,8 +516,9 @@ kanoStateId.addEventListener('drop', (e)=>{
                     cheerMe.stateTweentyCheers()
                     const matchDiv = document.getElementById('match')
                     matchDiv.innerText = totalMatch;
-                    // disableKanoState()
                     removeSingleNode(dragDivs, 19);
+                    countStatesRemaing()
+                    countNumberSates.innerHTML = statesRemaining
                 }
                 else{
                     unMatch()
@@ -508,8 +539,9 @@ katsinaStateId.addEventListener('drop', (e)=>{
                     cheerMe.stateTweentyOneCheers()
                     const matchDiv = document.getElementById('match')
                     matchDiv.innerText = totalMatch;
-                    // disableKatsinaState()
                     removeSingleNode(dragDivs, 20);
+                    countStatesRemaing()
+                    countNumberSates.innerHTML = statesRemaining
                 }
                 else{
                     unMatch()
@@ -530,8 +562,9 @@ kebbiStateId.addEventListener('drop', (e)=>{
                     cheerMe.stateTweentyTwoCheers()
                     const matchDiv = document.getElementById('match')
                     matchDiv.innerText = totalMatch
-                    // disableKebbiState()
                     removeSingleNode(dragDivs, 21);
+                    countStatesRemaing()
+                    countNumberSates.innerHTML = statesRemaining
                 }
                 else{
                     unMatch()
@@ -552,8 +585,9 @@ kogiStateId.addEventListener('drop', (e)=>{
                     cheerMe.stateTweentyThreeCheers()
                     const matchDiv = document.getElementById('match')
                     matchDiv.innerText = totalMatch;
-                    // disableKogiState()
                     removeSingleNode(dragDivs, 22);
+                    countStatesRemaing()
+                    countNumberSates.innerHTML = statesRemaining
                 }
                 else{
                     unMatch()
@@ -574,8 +608,9 @@ kwaraStateId.addEventListener('drop', (e)=>{
                     cheerMe.stateTweentyFourCheers()
                     const matchDiv = document.getElementById('match')
                     matchDiv.innerText = totalMatch;
-                    // disableKwaraState()
                     removeSingleNode(dragDivs, 23);
+                    countStatesRemaing()
+                    countNumberSates.innerHTML = statesRemaining
                 }
                 else{
                     unMatch()
@@ -596,8 +631,9 @@ lagosStateId.addEventListener('drop', (e)=>{
                     cheerMe.stateTweentyFiveCheers()
                     const matchDiv = document.getElementById('match')
                     matchDiv.innerText = totalMatch;
-                    // disableLagosState()
                     removeSingleNode(dragDivs, 24);
+                    countStatesRemaing()
+                    countNumberSates.innerHTML = statesRemaining
                 }
                 else{
                     unMatch()
@@ -619,8 +655,9 @@ nassarawaStateId.addEventListener('drop', (e)=>{
                     cheerMe.stateTweentySixCheers()
                     const matchDiv = document.getElementById('match')
                     matchDiv.innerText = totalMatch;
-                    // disableNassarawaState()
                     removeSingleNode(dragDivs, 25);
+                    countStatesRemaing()
+                    countNumberSates.innerHTML = statesRemaining
                 }
                 else{
                     unMatch()
@@ -641,8 +678,9 @@ nigerStateId.addEventListener('drop', (e)=>{
                     cheerMe.stateTweentySevenCheers()
                     const matchDiv = document.getElementById('match')
                     matchDiv.innerText = totalMatch;
-                    // disableNigerState()
                     removeSingleNode(dragDivs, 26);
+                    countStatesRemaing()
+                    countNumberSates.innerHTML = statesRemaining
                 }
                 else{                    
                     unMatch()
@@ -663,8 +701,9 @@ ogunStateId.addEventListener('drop', (e)=>{
                     cheerMe.stateTweentyEightCheers()
                     const matchDiv = document.getElementById('match')
                     matchDiv.innerText = totalMatch;
-                    // disableOgunState()
                     removeSingleNode(dragDivs, 27);
+                    countStatesRemaing()
+                    countNumberSates.innerHTML = statesRemaining
                 }
                 else{
                     unMatch()
@@ -685,8 +724,9 @@ ondoStateId.addEventListener('drop', (e)=>{
                     cheerMe.stateTweentyNineCheers()
                     const matchDiv = document.getElementById('match')
                     matchDiv.innerText = totalMatch;
-                    // disableOndoState()
                     removeSingleNode(dragDivs, 28);
+                    countStatesRemaing()
+                    countNumberSates.innerHTML = statesRemaining
                 }
                 else{
                     unMatch()
@@ -707,8 +747,9 @@ osunStateId.addEventListener('drop', (e)=>{
                     cheerMe.stateThirtyCheers()
                     const matchDiv = document.getElementById('match')
                     matchDiv.innerText = totalMatch;
-                    // disableOsunState()
                     removeSingleNode(dragDivs, 29);
+                    countStatesRemaing()
+                    countNumberSates.innerHTML = statesRemaining
                 }
                 else{
                     unMatch()
@@ -729,8 +770,9 @@ oyoStateId.addEventListener('drop', (e)=>{
                     cheerMe.stateThirtyOneCheers()
                     const matchDiv = document.getElementById('match')
                     matchDiv.innerText = totalMatch;
-                    // disableOyoState()
                     removeSingleNode(dragDivs, 30);
+                    countStatesRemaing()
+                    countNumberSates.innerHTML = statesRemaining
                 }
                 else{
                     unMatch()
@@ -751,8 +793,9 @@ plateauStateId.addEventListener('drop', (e)=>{
                     cheerMe.stateThirtyTwoCheers()
                     const matchDiv = document.getElementById('match')
                     matchDiv.innerText = totalMatch;
-                    // disablePlateauState()
                     removeSingleNode(dragDivs, 31);
+                    countStatesRemaing()
+                    countNumberSates.innerHTML = statesRemaining
                 }
                 else{
                     unMatch()
@@ -773,8 +816,9 @@ riversStateId.addEventListener('drop', (e)=>{
                     cheerMe.stateThirtyThreeCheers()
                     const matchDiv = document.getElementById('match')
                     matchDiv.innerText = totalMatch;
-                    // disableRiversState()
                     removeSingleNode(dragDivs, 32);
+                    countStatesRemaing()
+                    countNumberSates.innerHTML = statesRemaining
                 }
                 else{
                     unMatch()
@@ -796,8 +840,9 @@ sokotoStateId.addEventListener('drop', (e)=>{
                     cheerMe.stateThirtyFourCheers()
                     const matchDiv = document.getElementById('match')
                     matchDiv.innerText = totalMatch;
-                    // disableSokotoState()
                     removeSingleNode(dragDivs, 33);
+                    countStatesRemaing()
+                    countNumberSates.innerHTML = statesRemaining
                 }
                 else{                    
                     unMatch()
@@ -818,8 +863,9 @@ tarabaStateId.addEventListener('drop', (e)=>{
                     cheerMe.stateThirtyFiveCheers()
                     const matchDiv = document.getElementById('match')
                     matchDiv.innerText = totalMatch;
-                    // disableTarabaState()
                     removeSingleNode(dragDivs, 34);
+                    countStatesRemaing()
+                    countNumberSates.innerHTML = statesRemaining
                 }
                 else{
                     unMatch()
@@ -842,6 +888,8 @@ yobeStateId.addEventListener('drop', (e)=>{
                     matchDiv.innerText = totalMatch;
                     // disableYobeState()
                     removeSingleNode(dragDivs, 35);
+                    countStatesRemaing()
+                    countNumberSates.innerHTML = statesRemaining
                 }
                 else{ 
                     unMatch()
@@ -865,6 +913,8 @@ zamfaraStateId.addEventListener('drop', (e)=>{
                     matchDiv.innerText = totalMatch;
                     // disableZamfaraState()
                     removeSingleNode(dragDivs, 36);
+                    countStatesRemaing()
+                    countNumberSates.innerHTML = statesRemaining
                 }
                 else{
                     unMatch()
@@ -876,7 +926,7 @@ zamfaraStateId.addEventListener('drop', (e)=>{
 
 
 
-
+ 
 
 
 // The index file must load before the maps is reshufle

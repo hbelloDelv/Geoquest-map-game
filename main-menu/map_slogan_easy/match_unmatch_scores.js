@@ -6,11 +6,14 @@ import {displayAlertBox} from './alertBox.js'
 
 
 
+
 let totalMatch = 0;
 let totalUnMatch = 0;
 
+let statesRemaining = 37
+
 function match(){
-    totalMatch++
+    totalMatch++   
 }
 
 
@@ -20,7 +23,12 @@ function unMatch(){
 
 
 
+function countStatesRemaing() {
+     statesRemaining--
+}
+
+// console.log(statesRemaining)
 
 
 
-export {match, unMatch, totalMatch, totalUnMatch};
+export {match, unMatch, totalMatch, totalUnMatch, countStatesRemaing, statesRemaining};
