@@ -27,14 +27,13 @@
 .abia-hints,
 .bayelsa-hints, .borno-hints,
 .cross_river-hints, .delta-hints, .ebonyi-hints,
-.ekiti-hints, 
-.imo-hints, .jigawa-hints,
+.ekiti-hints,  .jigawa-hints,
  .kano-hints, .katsina-hints,
 .kebbi-hints, .kogi-hints, .kwara-hints,
 .lagos-hints, 
 .osun-hints,
 .oyo-hints, .plateau-hints, 
-.sokoto-hints, .taraba-hints, .yobe-hints,
+.sokoto-hints, .yobe-hints,
 .zamfara-hints
 {
     width: 90%;
@@ -48,7 +47,6 @@
     padding-left: 4px;
     color: whitesmoke;
     max-height: 15%;
-    overflow-y: auto;
 }
 
 
@@ -57,18 +55,14 @@
     width: 90%;
     position: absolute;
     background-color: rgb(148, 146, 146);
-    /* background-color: red; */
     top: 60%;
     right: 20%;
     z-index: 100;
     font-size: smaller;
     border-radius: 4px 4px 0 4px;
-    /* padding-left: 4px; */
     padding: 4px;
     color: whitesmoke;
     max-height: 25%;
-    /* overflow-y: auto; */
-    height: fit-content;
 }
 
 
@@ -76,59 +70,162 @@
     width: 90%;
     position: absolute;
     background-color: rgb(148, 146, 146);
-    /* background-color: red; */
     top: 73%;
     right: 20%;
     z-index: 100;
     font-size: smaller;
     border-radius: 4px 4px 0 4px;
-    /* padding-left: 4px; */
     padding: 4px;
     color: whitesmoke;
     max-height: 25%;
-    /* overflow-y: auto; */
-    height: fit-content;
 }
 
-.akwa_ibom-hints, .benue-hints, .edo-hints,
-.enugu-hints, .kaduna-hints, .nassarawa-hints,
-.niger-hints, .gombe-hints{
+.akwa_ibom-hints, .benue-hints, 
+.nassarawa-hints,
+.gombe-hints{
     width: 90%;
     position: absolute;
     background-color: rgb(148, 146, 146);
-    /* background-color: red; */
     top: 65%;
     right: 20%;
     z-index: 100;
     font-size: smaller;
     border-radius: 4px 4px 0 4px;
-    /* padding-left: 4px; */
     padding: 4px;
     color: whitesmoke;
     max-height: 25%;
-    /* overflow-y: auto; */
-    height: fit-content;
 }
 
-/*To be worked on .edo-hints */
 
-
-.abuja-hints, .anambra-hints, .ogun-hints,
-.ondo-hints, .rivers-hints {
+.imo-hints, .edo-hints{
     width: 90%;
     position: absolute;
     background-color: rgb(148, 146, 146);
-    /* background-color: red; */
+    top: 72%;
+    right: 20%;
+    z-index: 100;
+    font-size: smaller;
+    border-radius: 4px 4px 0 4px;
+    padding: 4px;
+    color: whitesmoke;
+    max-height: 25%;
+}
+
+.edo-hints{
+    width: 90%;
+    position: absolute;
+    background-color: rgb(148, 146, 146);
+    top: 52%;
+    right: 20%;
+    z-index: 100;
+    font-size: smaller;
+    border-radius: 4px 4px 0 4px;
+    padding: 4px;
+    color: whitesmoke;
+    max-height: 32%;
+}
+
+.ogun-hints{
+    width: 90%;
+    position: absolute;
+    background-color: rgb(148, 146, 146);
+    top: 73%;
+    right: 20%;
+    z-index: 100;
+    font-size: smaller;
+    border-radius: 4px 4px 0 4px;
+    padding: 4px;
+    color: whitesmoke;
+    max-height: 32%;
+}
+
+.enugu-hints{
+    width: 90%;
+    position: absolute;
+    background-color: rgb(148, 146, 146);
+    top: 68%;
+    right: 20%;
+    z-index: 100;
+    font-size: smaller;
+    border-radius: 4px 4px 0 4px;
+    padding: 4px;
+    color: whitesmoke;
+    max-height: 32%;
+}
+
+.taraba-hints{
+    width: 90%;
+    position: absolute;
+    background-color: rgb(148, 146, 146);
+    top: 70%;
+    right: 20%;
+    z-index: 100;
+    font-size: smaller;
+    border-radius: 4px 4px 0 4px;
+    padding: 4px;
+    color: whitesmoke;
+    max-height: 32%;
+}
+
+
+.kaduna-hints{
+    width: 90%;
+    position: absolute;
+    background-color: rgb(148, 146, 146);
+    top: 58%;
+    right: 20%;
+    z-index: 100;
+    font-size: smaller;
+    border-radius: 4px 4px 0 4px;
+    padding: 4px;
+    color: whitesmoke;
+    max-height: 32%;
+}
+
+
+/* //////////////////////////////// */
+.niger-hints{
+    width: 90%;
+    position: absolute;
+    background-color: rgb(148, 146, 146);
+    top: 55%;
+    right: 20%;
+    z-index: 100;
+    font-size: smaller;
+    border-radius: 4px 4px 0 4px;
+    padding: 4px;
+    color: whitesmoke;
+    max-height: 32%;
+}
+
+
+.abuja-hints{
+    width: 90%;
+    position: absolute;
+    background-color: rgb(148, 146, 146);
+    top: 78%;
+    right: 20%;
+    z-index: 100;
+    font-size: smaller;
+    border-radius: 4px 4px 0 4px;
+    padding: 4px;
+    color: whitesmoke;
+    max-height: 32%;
+}
+
+.anambra-hints, 
+.ondo-hints, .rivers-hints{
+    width: 90%;
+    position: absolute;
+    background-color: rgb(148, 146, 146);
     top: 80%;
     right: 20%;
     z-index: 100;
     font-size: smaller;
     border-radius: 4px 4px 0 4px;
-    /* padding-left: 4px; */
     padding: 4px;
     color: whitesmoke;
     max-height: 15%;
-    overflow-y: auto;
 }
 
 

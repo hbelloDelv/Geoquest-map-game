@@ -19,8 +19,10 @@ export function replaceDiv() {
     
 
      const leftSection = document.getElementById('left-section')
-     const mapDiv = leftSection.children[1]
-    //  console.log(mapDiv)
+     const mapDiv = leftSection.children[2]
+     console.log(mapDiv)
      leftSection.replaceChild(newDiv, mapDiv)
     
 }
+
+// replaceDiv()

@@ -1,4 +1,4 @@
-/////////////// DRAGMAP DISABLE FUNCTION ///////////////////
+/////////////// DRAGMAP DISABLE and ENABLE FUNCTIONS ///////////////////
 const dragMapTile = document.querySelector('#right-section')
 const eachMapTile = dragMapTile.children
 
@@ -21,9 +21,6 @@ const disableDragMap = () => {
     }
   });
 };
-
-
-
 
 
 

@@ -2,8 +2,10 @@ import {cheerMe} from './cheer_me.js';
 import {totalMatch, totalUnMatch} from './match_unmatch_scores.js';
 import {addConfetti} from './splashConfetti.js'
 import {replaceDiv} from './replace_map_final.js';
-import displayAlertBox from './alertBox_2minRemaing.js'
 import {disableDragMap, enableDisableDragMap} from './enable_disableTile.js'
+import { alertBoxGameOver } from './alertBox_gameOver.js';
+import { alertBoxGoodJob } from './alertBox_goodJob.js'
+import { alertBoxPerfectRun } from './alertBox_perfectRun.js'
 
 
 
@@ -12,6 +14,9 @@ let enableStartButton = false
 let timeLeft; // 5 minutes in seconds
 let countdownInterval;
 // let intervalRunning = false;
+
+
+
 
 /////////// FINAL SCORE AND RESULT ////////////////////////
 function checkScore() {
@@ -23,23 +28,20 @@ function checkScore() {
             replaceDiv()
         },2600)
         setTimeout(()=>{
-            alert("Perfect run\n click Reset button to play again")
-            // displayAlertBox()
-            // location.reload()
-        },4400)
+            alertBoxPerfectRun()
+        },4200)
         
       }else if(totalMatch === 37 && totalUnMatch > 0 && timeLeft > 0){
         clearInterval(countdownInterval)
         addConfetti()
         cheerMe.finishingDrum()   
         setTimeout(()=>{
-          alert("Great job\n click Reset button to play again")
-          // location.reload()
+          alertBoxGoodJob()
         },2000)
 
     }else if(totalMatch !== 37 && timeLeft === 1){
         setTimeout(()=>{
-            alert("Game over\n Restart")
+            alertBoxGameOver()
         },1000)
       startButton.disabled = enableStartButton
     }

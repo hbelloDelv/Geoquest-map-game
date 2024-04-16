@@ -7,9 +7,10 @@ const myAlert = document.createElement('dialog')
 const bodyElement = document.querySelector('body')
 
 // let timeRemainingEmoji = '&#128521;'
-let goodJobEmoji = '&#128077;;'
+// let goodJobEmoji = '&#128077;;'
+let goodJobEmoji = '&#128525;'
 
-export default function alertBoxPerfectRun() {
+function alertBoxPerfectRun() {
     myAlert.style.position = 'absolute';
     myAlert.style.zIndex = '100';
     myAlert.style.top = '20%';
@@ -211,7 +212,8 @@ btnRestart.addEventListener('click', ()=>{
 
 
 btnNextLevel.addEventListener('click', ()=>{    
-    window.location.href =  './map_match_medium/index.html'
+    window.location.href =  '../map_match_medium/index.html'
+    // window.location.href =  '../map_slogan_easy/index.html'
 })
 
 
@@ -231,6 +233,5 @@ handleRightDivTopText()
 handleRightDivTime()
 
 
-// alertBoxGoodJob()
-alertBoxPerfectRun()
+export {alertBoxPerfectRun}
 

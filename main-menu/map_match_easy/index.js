@@ -23,7 +23,7 @@ import {ResetButton} from './resetMap.js'
 /////////// TESTING CODE ////////////////////////
 // import alertBoxGameOver from './alertBox_gameOver.js'
 // import alertBoxGoodJob from './alertBox_goodJob.js'
-import alertBoxPerfectRun from './alertBox_perfectRun.js'
+// import alertBoxPerfectRun from './alertBox_perfectRun.js'
 
 
 let countNumberSates = document.querySelector('.number-of-states')

@@ -1,4 +1,6 @@
 // import {stopInterval, intervalRunning, startCountdown} from './Timer.js'
+import {statesRemaining} from './match_unmatch_scores.js';
+
 
 
 
@@ -6,10 +8,10 @@
 const myAlert = document.createElement('dialog')
 const bodyElement = document.querySelector('body')
 
-// let timeRemainingEmoji = '&#128521;'
-let goodJobEmoji = '&#128077;;'
 
-export default function alertBoxGameOver() {
+let gameOverEmoji = '&#128542;'
+
+ function alertBoxGameOver() {
     myAlert.style.position = 'absolute';
     myAlert.style.zIndex = '100';
     myAlert.style.top = '20%';
@@ -68,8 +70,7 @@ function handleLeftDivTopText() {
 
 const leftDivEmoji = document.createElement('div');
 function handleLeftDivEmoji() {
-    // leftDivEmoji.innerHTML = timeRemainingEmoji;
-    leftDivEmoji.innerHTML = goodJobEmoji
+    leftDivEmoji.innerHTML = gameOverEmoji
     leftDivEmoji.style.fontSize = '3rem'
     leftDivEmoji.style.textAlign = 'center'
     // leftDivEmoji.style.backgroundColor = 'black'
@@ -114,7 +115,8 @@ function handleRightDivTopText() {
 
 const rightDivTimeDisplay = document.createElement('div');
 function handleRightDivTime() {
-    rightDivTimeDisplay.innerText = '10';
+    // rightDivTimeDisplay.innerText = '10';
+    rightDivTimeDisplay.innerText = statesRemaining
     rightDivTimeDisplay.style.fontSize = '1.5rem'
     rightDivTimeDisplay.style.textAlign = 'center'
     rightDivTimeDisplay.style.color = 'white'
@@ -210,9 +212,9 @@ btnRestart.addEventListener('click', ()=>{
 })
 
 
-btnNextLevel.addEventListener('click', ()=>{    
-    window.location.href =  './map_match_medium/index.html'
-})
+// btnNextLevel.addEventListener('click', ()=>{    
+//     window.location.href =  './map_match_medium/index.html'
+// })
 
 
 btnCancel.addEventListener('click', ()=>{    
@@ -231,6 +233,5 @@ handleRightDivTopText()
 handleRightDivTime()
 
 
-// alertBoxGoodJob()
-alertBoxGameOver()
-
+// alertBoxGameOver()
+export {alertBoxGameOver}

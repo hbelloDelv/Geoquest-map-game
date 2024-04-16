@@ -6,10 +6,10 @@
 const myAlert = document.createElement('dialog')
 const bodyElement = document.querySelector('body')
 
-// let timeRemainingEmoji = '&#128521;'
-let goodJobEmoji = '&#128077;;'
 
-export default function alertBoxGoodJob() {
+let goodJobEmoji = '&#129325;'
+
+ function alertBoxGoodJob() {
     myAlert.style.position = 'absolute';
     myAlert.style.zIndex = '100';
     myAlert.style.top = '20%';
@@ -211,7 +211,8 @@ btnRestart.addEventListener('click', ()=>{
 
 
 btnNextLevel.addEventListener('click', ()=>{    
-    window.location.href =  './map_match_medium/index.html'
+    window.location.href =  '../map_match_medium/index.html'
+    
 })
 
 
@@ -231,5 +232,14 @@ handleRightDivTopText()
 handleRightDivTime()
 
 
-alertBoxGoodJob()
+export {alertBoxGoodJob}
 
+
+// // Get the current URL
+// var currentURL = window.location.href;
+
+// // Remove '/map_match_easy/' from the URL
+// var newURL = currentURL.replace('/map_match_easy/', '/map_match_medium/');
+
+// // Navigate to the new URL
+// window.location.href = newURL;
