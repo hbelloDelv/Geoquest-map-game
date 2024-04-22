@@ -57,8 +57,61 @@ body{
     border-top: none;
     border-bottom: none;
     border-left: none;
-
 }
+
+
+.xtension-menu-three{
+    display: flex;
+}
+
+
+
+.show-time-remaining{
+    background-color:  rgb(3, 53, 3);
+    text-align: center;
+    font-size: 1.5rem;
+    /* padding: 2px; */
+    color: yellow;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    animation: slide-right-left 4s infinite;
+}
+
+.time-remaining-label{
+    text-align: center;
+    /* padding: 2px;  */
+    color: yellow;
+    background-color:  rgb(3, 53, 3);
+    writing-mode:vertical-lr;
+    
+    animation: slide-right-left 4s infinite;
+}
+
+
+@keyframes slide-right-left {
+    0%{
+        transform: rotate(100deg)
+    }
+    25%{
+        transform: rotate(50deg)
+    }
+    50%{
+        transform: rotate(25deg)
+    }
+    100%{
+        transform: rotate(0deg)
+    }
+}
+
+
+
+.hide-show-time{
+    display: none;
+    /* visibility: hidden; */
+}
+
+
 
 
 .xtension-menu-four{
@@ -94,7 +147,7 @@ body{
 
 
 #show-time-div{
-    background-color: red;
+    background-color: #03b103;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -151,7 +204,10 @@ background-color: rgb(250, 250, 177);
     display: flex;
     align-items: center;
     justify-content: center;
+    /* background-color: red; */
 }
+
+
 
 #cheer-me{
    font-family: fantasy;
@@ -232,7 +288,7 @@ background-color: rgb(250, 250, 177);
     width: 10px;
     height: 10px;
     background-color: yellow; /* You can set the color as needed */
-    transform-origin: 50% 50%;
+    transform-origin: 100% 100%;
     animation: confetti-fall linear 2s;
   }
   

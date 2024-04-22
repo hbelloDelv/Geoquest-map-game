@@ -929,5 +929,6 @@ zamfaraStateId.addEventListener('drop', (e)=>{
  
 
 
+export {countNumberSates}
 // The index file must load before the maps is reshufle
 shuffleMaps()

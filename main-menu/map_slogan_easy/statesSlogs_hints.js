@@ -413,7 +413,9 @@ zamfaraLabel.addEventListener('mouseout', ()=>{
 /////////////////////////////////////////////////////
 //////////////// PREVENT TEXT DEFAULT //////////////
 // Get reference to the text elements
+// var tarabaText = document.querySelector('.sm_label_NGTA');
 var tarabaText = document.querySelector('.sm_label_NGTA');
+// tarabaText.
 var yobeText = document.querySelector('.sm_label_NGYO');
 
 // Attach event listener to prevent default behavior

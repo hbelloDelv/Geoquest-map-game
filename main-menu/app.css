@@ -5,6 +5,57 @@
 }
 
 
+.splash-screen{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color:  #006801;
+    z-index: 200;
+
+
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+}
+
+.splash-screen.display-none{
+    position: fixed;
+    opacity: 0;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    z-index: -10;
+    transition: all 0.8s;
+
+
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+}
+
+.splash-screen img{
+ display: inline-block;
+ border-radius: 4px;
+}
+
+
+@keyframes fade-in{
+  to{
+      opacity: 1;
+  }  
+}
+
+.fade-in{
+    opacity: 0;
+    animation: fade-in 1s ease-in forwards;
+}
+
+
+
 .wrapper{
     height: 100vh;
     width: 100vw;
@@ -93,7 +144,7 @@
 }
 
 .welcome-text-div > img{
-    animation: geoquestAnimation 3s ease-in;
+    animation: geoquestAnimation 11s ease-in;
 }
 
 
@@ -111,3 +162,5 @@
         transform: rotate(0deg)
     }
 }
+
+

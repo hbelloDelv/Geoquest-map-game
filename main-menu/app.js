@@ -104,3 +104,12 @@ function EnableButtonOneIfDisable() {
 }
 
 // console.log(btnLevelOne, btnLevelTwo, btnLevelEasy, btnLevelMedium, btnLevelHard)
+
+
+////////////////// SPLASH SCREEN FUNCTION //////////////////////////
+const splashScreen = document.querySelector('.splash-screen')
+document.addEventListener('DOMContentLoaded', (e)=>{
+        setTimeout(()=>{
+            splashScreen.classList.add('display-none')
+        },10000)
+})

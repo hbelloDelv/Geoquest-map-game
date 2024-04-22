@@ -183,7 +183,6 @@
 }
 
 
-/* //////////////////////////////// */
 .niger-hints{
     width: 90%;
     position: absolute;
@@ -227,6 +226,34 @@
     color: whitesmoke;
     max-height: 15%;
 }
+
+/* 
+//////////////////////////////////////
+STEPS FOR CREATING STATE HINTS
+//////////////////////////////////////
+1. Add the state div to the html index page
+2. add the class for each state 
+* the dragable parent div class
+* the state hint class
+
+
+
+////////////////////////////////////
+GO TO statesSlogs_hints.js
+//////////////////////////////
+Add events to these classes
+* the dragable parent div class
+* the state hint class
+
+
+////////////////////////////////////
+GO TO CSS FILE SLOGAN HINTS
+//////////////////////////////
+Style these classes
+* the dragable parent div class
+* the state hint class
+*/
+
 
 
 

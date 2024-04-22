@@ -6,8 +6,7 @@
 const myAlert = document.createElement('dialog')
 const bodyElement = document.querySelector('body')
 
-// let timeRemainingEmoji = '&#128521;'
-// let goodJobEmoji = '&#128077;;'
+
 let goodJobEmoji = '&#128525;'
 
 function alertBoxPerfectRun() {

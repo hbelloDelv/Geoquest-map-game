@@ -1,5 +1,6 @@
 // import {stopInterval, intervalRunning, startCountdown} from './Timer.js'
-import {statesRemaining} from './match_unmatch_scores.js';
+// import {statesRemaining} from './match_unmatch_scores.js';
+// import {countNumberSates} from './index.js';
 
 
 
@@ -112,11 +113,13 @@ function handleRightDivTopText() {
 
 
 
+// let countNumberSate = document.querySelector('.number-of-states')
 
 const rightDivTimeDisplay = document.createElement('div');
-function handleRightDivTime() {
-    // rightDivTimeDisplay.innerText = '10';
-    rightDivTimeDisplay.innerText = statesRemaining
+// const rightDivTimeDisplay = document.querySelector('.number-of-states');
+
+function handleRightDivTime(statesRemaining) {
+    rightDivTimeDisplay.innerHTML = statesRemaining
     rightDivTimeDisplay.style.fontSize = '1.5rem'
     rightDivTimeDisplay.style.textAlign = 'center'
     rightDivTimeDisplay.style.color = 'white'
