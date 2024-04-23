@@ -3,7 +3,9 @@ import {totalMatch, totalUnMatch} from './match_unmatch_scores.js';
 import {addConfetti} from './splashConfetti.js'
 import {replaceDiv} from './replace_map_final.js';
 import {disableDragMap, enableDisableDragMap} from './enable_disableTile.js'
-
+// import { alertBoxGameOver } from './alertBox_gameOver.js';
+// import { alertBoxGoodJob } from './alertBox_goodJob.js'
+// import { alertBoxPerfectRun } from './alertBox_perfectRun.js'
 
 import { handlegoodJobModal, handlePefectRunModal, handleGameOverModal} from './modals_handler.js';
 
@@ -31,7 +33,7 @@ let elapsedSeconds
 // ///////////// THE COUNTDOWN TIMER FUNCTION /////////////////////
 function startCountdown() {
    display = document.getElementById("show-time-div");
-   timeLeft = 300;
+   timeLeft = 105;
    enableStartButton = true;
 
   let startTime = Date.now(); 
@@ -107,6 +109,7 @@ function checkScore() {
         setTimeout(()=>{
           let showStateRemaining = document.querySelector('.stateCount')
               showStateRemaining.textContent = statesRemaining
+
             handleGameOverModal()
         },1000)
       startButton.disabled = enableStartButton
@@ -123,7 +126,7 @@ function alertTiming() {
   if(timeLeft === 30){
     cheerMe.warning()
     display.style.backgroundColor = 'red'    
-  }else if(timeLeft === 119){
+  }else if(timeLeft === 44){
     cheerMe.warning()
     flashTime = document.querySelector('.show-time-remaining')
     timeLabel = document.querySelector('.time-remaining-label')
@@ -147,17 +150,6 @@ function hideTImeRemaining() {
   },6000)
 }
 
-
-
-
-
-///////////////// PERHAPS I SHOULD ALLOW RESET BUTTON TO CARRY OUT THIS FUNCTION ///////////////////////
-function reActivateStartButton() {
-enableStartButton = false
-  if(timeLeft === 0){
-    startButton.disabled = enableStartButton
-  }
-}
 
 
 
