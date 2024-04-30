@@ -10,7 +10,7 @@ import { handlegoodJobModal, handlePefectRunModal, handleGameOverModal} from './
 //////////////// TESTING /////////////////////////
 import {statesRemaining} from './match_unmatch_scores.js';
 
-console.log(statesRemaining)
+// console.log(statesRemaining)
 
 
 
@@ -54,7 +54,7 @@ function startCountdown() {
       display.textContent = minutes + ':' + seconds;
 
 
-      startButton.disabled = enableStartButton;
+      // startButton.disabled = enableStartButton;
 
       if (timeLeft <= 0) {
           clearInterval(countdownInterval);
@@ -70,12 +70,27 @@ function startCountdown() {
 
 
 
+const displayStartDialog = document.querySelector('.start-game')
+const startGameButton = document.querySelector('#start')
 
 
-startButton.addEventListener('click', function() {
+window.addEventListener('load', function () {
+    displayStartDialog.showModal()
+})
+
+
+startGameButton.addEventListener('click', function () {
   startCountdown();
   enableDisableDragMap()
+  displayStartDialog.close()
 })
+
+
+// ///////////// NOT IN USE ANY MORE ///////////////////////
+// startButton.addEventListener('click', function() {
+//   startCountdown();
+//   enableDisableDragMap()
+// })
 
 
 /////////// FINAL SCORE AND RESULT ////////////////////////
@@ -110,8 +125,15 @@ function checkScore() {
             handleGameOverModal()
         },1000)
       startButton.disabled = enableStartButton
-    }
-      return false
+      }
+      // NEWLY ADDED on 30th APRIL 2024 /////
+        else if(totalUnMatch >= 8){
+        let showStateRemaining = document.querySelector('.stateCount')
+        showStateRemaining.textContent = statesRemaining
+        handleGameOverModal()
+        clearInterval(countdownInterval)
+      }
+
   }
 
 
@@ -149,15 +171,12 @@ function hideTImeRemaining() {
 
 
 
+function handleUnmatch() {
+  if(totalUnMatch >=10){
 
-
-///////////////// PERHAPS I SHOULD ALLOW RESET BUTTON TO CARRY OUT THIS FUNCTION ///////////////////////
-function reActivateStartButton() {
-enableStartButton = false
-  if(timeLeft === 0){
-    startButton.disabled = enableStartButton
   }
 }
+
 
 
 

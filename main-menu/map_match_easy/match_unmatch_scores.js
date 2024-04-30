@@ -1,11 +1,14 @@
 
 let totalMatch = 0;
 let totalUnMatch = 0;
+// let consecutiveUnMatch = 0;
+// consecutiveUnMatch++
+// consecutiveUnMatch = 0 
 
 let statesRemaining = 37
 
 function match(){
-    totalMatch++   
+    totalMatch++  
 }
 
 

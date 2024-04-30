@@ -1,0 +1,263 @@
+.abia-one, .abuja-two, .adamawa-three,
+.akwa_ibom-four, .anambra-five,
+.bauchi-six, .bayelsa-seven,
+.benue-eight, .borno-nine,
+.cross_river-ten, .delta-eleven,
+.ebonyi-twelve, .edo-thirteen,
+.ekiti-fourteen, .enugu-fifteen,
+.gombe-sixteen, .imo-seventeen,
+.jigawa-eighteen, .kaduna-nineteen,
+.kano-twenty, .katsina-twenty-one,
+.kebbi-twenty-two, .kogi-twenty-three,
+.kwara-twenty-four, .lagos-twenty-five,
+.nassarawa-twenty-six, .niger-twenty-seven,
+.ogun-twenty-eight, .ondo-twenty-nine,
+.osun-thirty, .oyo-thirty-one,
+.plateau-thirty-two, .rivers-thirty-three,
+.sokoto-thirty-four, .taraba-thirty-five,
+.yobe-thirty-six, .zamfara-thirty-seven
+{
+    position: relative;
+    z-index: 0;
+    cursor: pointer;
+}
+
+
+
+.abia-hints,
+.bayelsa-hints, .borno-hints,
+.cross_river-hints, .delta-hints, .ebonyi-hints,
+.ekiti-hints,  .jigawa-hints,
+ .kano-hints, .katsina-hints,
+.kebbi-hints, .kogi-hints, .kwara-hints,
+.lagos-hints, 
+.osun-hints,
+.oyo-hints, .plateau-hints, 
+.sokoto-hints, .yobe-hints,
+.zamfara-hints
+{
+    width: 90%;
+    position: absolute;
+    background-color: rgb(148, 146, 146);
+    top: 75%;
+    right: 20%;
+    z-index: 100;
+    font-size: smaller;
+    border-radius: 4px 4px 0 4px;
+    padding-left: 4px;
+    color: whitesmoke;
+    max-height: 15%;
+}
+
+
+
+.adamawa-hints{
+    width: 90%;
+    position: absolute;
+    background-color: rgb(148, 146, 146);
+    top: 60%;
+    right: 20%;
+    z-index: 100;
+    font-size: smaller;
+    border-radius: 4px 4px 0 4px;
+    padding: 4px;
+    color: whitesmoke;
+    max-height: 25%;
+}
+
+
+.bauchi-hints {
+    width: 90%;
+    position: absolute;
+    background-color: rgb(148, 146, 146);
+    top: 73%;
+    right: 20%;
+    z-index: 100;
+    font-size: smaller;
+    border-radius: 4px 4px 0 4px;
+    padding: 4px;
+    color: whitesmoke;
+    max-height: 25%;
+}
+
+.akwa_ibom-hints, .benue-hints, 
+.nassarawa-hints,
+.gombe-hints{
+    width: 90%;
+    position: absolute;
+    background-color: rgb(148, 146, 146);
+    top: 65%;
+    right: 20%;
+    z-index: 100;
+    font-size: smaller;
+    border-radius: 4px 4px 0 4px;
+    padding: 4px;
+    color: whitesmoke;
+    max-height: 25%;
+}
+
+
+.imo-hints, .edo-hints{
+    width: 90%;
+    position: absolute;
+    background-color: rgb(148, 146, 146);
+    top: 72%;
+    right: 20%;
+    z-index: 100;
+    font-size: smaller;
+    border-radius: 4px 4px 0 4px;
+    padding: 4px;
+    color: whitesmoke;
+    max-height: 25%;
+}
+
+.edo-hints{
+    width: 90%;
+    position: absolute;
+    background-color: rgb(148, 146, 146);
+    top: 52%;
+    right: 20%;
+    z-index: 100;
+    font-size: smaller;
+    border-radius: 4px 4px 0 4px;
+    padding: 4px;
+    color: whitesmoke;
+    max-height: 32%;
+}
+
+.ogun-hints{
+    width: 90%;
+    position: absolute;
+    background-color: rgb(148, 146, 146);
+    top: 73%;
+    right: 20%;
+    z-index: 100;
+    font-size: smaller;
+    border-radius: 4px 4px 0 4px;
+    padding: 4px;
+    color: whitesmoke;
+    max-height: 32%;
+}
+
+.enugu-hints{
+    width: 90%;
+    position: absolute;
+    background-color: rgb(148, 146, 146);
+    top: 68%;
+    right: 20%;
+    z-index: 100;
+    font-size: smaller;
+    border-radius: 4px 4px 0 4px;
+    padding: 4px;
+    color: whitesmoke;
+    max-height: 32%;
+}
+
+.taraba-hints{
+    width: 90%;
+    position: absolute;
+    background-color: rgb(148, 146, 146);
+    top: 70%;
+    right: 20%;
+    z-index: 100;
+    font-size: smaller;
+    border-radius: 4px 4px 0 4px;
+    padding: 4px;
+    color: whitesmoke;
+    max-height: 32%;
+}
+
+
+.kaduna-hints{
+    width: 90%;
+    position: absolute;
+    background-color: rgb(148, 146, 146);
+    top: 58%;
+    right: 20%;
+    z-index: 100;
+    font-size: smaller;
+    border-radius: 4px 4px 0 4px;
+    padding: 4px;
+    color: whitesmoke;
+    max-height: 32%;
+}
+
+
+.niger-hints{
+    width: 90%;
+    position: absolute;
+    background-color: rgb(148, 146, 146);
+    top: 55%;
+    right: 20%;
+    z-index: 100;
+    font-size: smaller;
+    border-radius: 4px 4px 0 4px;
+    padding: 4px;
+    color: whitesmoke;
+    max-height: 32%;
+}
+
+
+.abuja-hints{
+    width: 90%;
+    position: absolute;
+    background-color: rgb(148, 146, 146);
+    top: 78%;
+    right: 20%;
+    z-index: 100;
+    font-size: smaller;
+    border-radius: 4px 4px 0 4px;
+    padding: 4px;
+    color: whitesmoke;
+    max-height: 32%;
+}
+
+.anambra-hints, 
+.ondo-hints, .rivers-hints{
+    width: 90%;
+    position: absolute;
+    background-color: rgb(148, 146, 146);
+    top: 80%;
+    right: 20%;
+    z-index: 100;
+    font-size: smaller;
+    border-radius: 4px 4px 0 4px;
+    padding: 4px;
+    color: whitesmoke;
+    max-height: 15%;
+}
+
+/* 
+//////////////////////////////////////
+STEPS FOR CREATING STATE HINTS
+//////////////////////////////////////
+1. Add the state div to the html index page
+2. add the class for each state 
+* the dragable parent div class
+* the state hint class
+
+
+
+////////////////////////////////////
+GO TO statesSlogs_hints.js
+//////////////////////////////
+Add events to these classes
+* the dragable parent div class
+* the state hint class
+
+
+////////////////////////////////////
+GO TO CSS FILE SLOGAN HINTS
+//////////////////////////////
+Style these classes
+* the dragable parent div class
+* the state hint class
+*/
+
+
+
+
+.on-off-hint{
+    visibility: hidden;
+}
+

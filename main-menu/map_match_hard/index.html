@@ -22,7 +22,7 @@
                      </div>
                      
                      <div class="startBtn-div">
-                        <button id="startBtn">Start</button>
+                        <!-- <button id="startBtn">Start</button> -->
                      </div>
                   </div>
 
@@ -308,71 +308,78 @@
                      </div>                
             </div>
         </div>
+            </div>
             <!-- DIALOG BOX FOR PERFECT RUN -->
-               <dialog class="goodJob-modal">
-                  <div class="top-section">
-                     <div class="emoji-wrapper">
-                        <h2>Good job</h2>
-                        <div class="emoji-here">
-                           &#129325;
-                        </div>
-                     </div>
-                     <div class="feed-back-wrapper">
-                        <div class="feed-text">
-                           <h3>Game finish in</h2>
-                        </div>
-                        <div class="show-state-remaining"></div>
-                     </div>
-                  </div>
-                  <div class="down-section">
-                     <button id="btn-restart">Restart</button>
-                     <button id="btn-medium">Next level</button>
-                     <button id="btn-close">Close</button>
-                  </div>
-               </dialog>
-               <!-- DIALOG BOX FOR PERFECT RUN -->
-               <dialog class="perfectRun-modal">
-                  <div class="top-section">
-                     <div class="emoji-wrapper">
-                        <h2>Perfect run</h2>
-                        <div class="emoji-here">
-                           &#128525;
-                        </div>
-                     </div>
-                     <div class="feed-back-wrapper">
-                        <div class="feed-text">
-                           <h3>Game finish in</h2>
-                        </div>
-                        <div id="show-state-remaining"></div>
-                     </div>
-                  </div>
-                  <div class="down-section">
-                     <button class="btn-restart">Restart</button>
-                     <button class="btn-medium">Next level</button>
-                     <button class="btn-close">Close</button>
-                  </div>
-               </dialog>
-               <!-- DIALOG BOX FOR GAME OVER -->
-               <dialog class="game-over-modal">
-                  <div class="top-section">
-                     <div class="emoji-wrapper">
-                        <h2>Game over</h2>
-                        <div class="emoji-here">
-                           &#128542;
-                        </div>
-                     </div>
-                     <div class="feed-back-wrapper">
-                        <div class="feed-text">
-                           <h3>States remaining</h2>
-                        </div>
-                        <div class="stateCount"></div>
-                     </div>
-                  </div>
-                  <div class="down-section-game-over">
-                     <button class="btn-restart-game-over">Restart</button>
-                     <button class="btn-close-game-over">Close</button>
-                  </div>
-               </dialog>
+            <dialog class="goodJob-modal">
+              <div class="top-section">
+                 <div class="emoji-wrapper">
+                    <h2>Good job</h2>
+                    <div class="emoji-here">
+                       &#129325;
+                    </div>
+                 </div>
+                 <div class="feed-back-wrapper">
+                    <div class="feed-text">
+                       <h3>Finished in</h2>
+                    </div>
+                    <div class="show-state-remaining"></div>
+                 </div>
+              </div>
+              <div class="down-section">
+                 <button id="btn-restart">Restart</button>
+                 <button id="btn-medium">Next level</button>
+                 <button id="btn-close">Close</button>
+              </div>
+           </dialog>
+           <!-- DIALOG BOX FOR PERFECT RUN -->
+           <dialog class="perfectRun-modal">
+              <div class="top-section">
+                 <div class="emoji-wrapper">
+                    <h2>Perfect run</h2>
+                    <div class="emoji-here">
+                       &#128525;
+                    </div>
+                 </div>
+                 <div class="feed-back-wrapper">
+                    <div class="feed-text">
+                       <h3>Finished in</h2>
+                    </div>
+                    <div id="show-state-remaining"></div>
+                 </div>
+              </div>
+              <div class="down-section">
+                 <button class="btn-restart">Restart</button>
+                 <button class="btn-medium">Next level</button>
+                 <button class="btn-close">Close</button>
+              </div>
+           </dialog>
+           <!-- DIALOG BOX FOR GAME OVER -->
+           <dialog class="game-over-modal">
+              <div class="top-section">
+                 <div class="emoji-wrapper">
+                    <h2>Game over</h2>
+                    <div class="emoji-here">
+                       &#128542;
+                    </div>
+                 </div>
+                 <div class="feed-back-wrapper">
+                    <div class="feed-text">
+                       <h3>Unmatched</h2>
+                    </div>
+                    <div class="stateCount"></div>
+                 </div>
+              </div>
+              <div class="down-section-game-over">
+                 <button class="btn-restart-game-over">Try again</button>
+                 <button class="btn-close-game-over">Close</button>
+              </div>
+           </dialog>
+           <!-- DIALOG BOX FOR START GAME -->
+           <dialog class="start-game">
+              <div class="startgame-wrapper">
+                 <button id="start">Start</button>
+              </div>
+           </dialog>
         <div id="footer">
             <!-- <a href="https://www.jamitan.com/" target="_blank">Jamitan Tech Nigeria Ltd &copy;</a> -->
             <a href="https://docs.google.com/forms/d/e/1FAIpQLSfKdUgSHOENNCYsk-xpovco-pVz_Dmbb_Zs45z3F5RxAtkcxQ/viewform?usp=sf_link" target="_blank">Thanks for playing please send feed back</a>

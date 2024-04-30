@@ -75,17 +75,14 @@ btnLevelTwo.addEventListener('click',(e)=>{
     if(btnLevelTwoTarget === "btn-level-two"){
 
         btnLevelEasy.addEventListener('click', ()=>{
-            // alert('level two easy')
             window.location.href = './map_slogan_easy/index.html'
         })
         
         btnLevelMedium.addEventListener('click', ()=>{
-            alert('level two medium')
             window.location.href =  './map_slogan_medium/index.html'
         })
         
         btnLevelHard.addEventListener('click', ()=>{
-            alert('level two hard')
             window.location.href =  './map_slogan_hard/index.html'
         })
     }

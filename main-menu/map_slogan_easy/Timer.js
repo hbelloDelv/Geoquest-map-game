@@ -2,8 +2,15 @@ import {cheerMe} from './cheer_me.js';
 import {totalMatch, totalUnMatch} from './match_unmatch_scores.js';
 import {addConfetti} from './splashConfetti.js'
 import {replaceDiv} from './replace_map_final.js';
-// import displayAlertBox from './alertBox_2minRemaing.js'
 import {disableDragMap, enableDisableDragMap} from './enable_disableTile.js'
+
+
+import { handlegoodJobModal, handlePefectRunModal, handleGameOverModal} from './modals_handler.js';
+
+//////////////// TESTING /////////////////////////
+import {statesRemaining} from './match_unmatch_scores.js';
+
+// console.log(statesRemaining)
 
 
 
@@ -11,7 +18,80 @@ let startButton = document.getElementById("startBtn")
 let enableStartButton = false
 let timeLeft; // 5 minutes in seconds
 let countdownInterval;
-// let intervalRunning = false;
+let minutes
+let seconds 
+let display;
+let elapsedMinutes 
+let elapsedSeconds
+
+
+
+
+
+// ///////////// THE COUNTDOWN TIMER FUNCTION /////////////////////
+function startCountdown() {
+   display = document.getElementById("show-time-div");
+   timeLeft = 300;
+   enableStartButton = true;
+
+  let startTime = Date.now(); 
+
+   countdownInterval = setInterval(function() {
+      let now = Date.now();
+      let elapsedTime = Math.floor((now - startTime) / 1000); // Elapsed time in seconds
+
+      elapsedMinutes = Math.floor(elapsedTime / 60);
+      elapsedSeconds = elapsedTime % 60;
+      elapsedMinutes = elapsedMinutes < 10 ? '0' + elapsedMinutes : elapsedMinutes;
+      elapsedSeconds = elapsedSeconds < 10 ? '0' + elapsedSeconds : elapsedSeconds;
+
+       minutes = Math.floor(timeLeft / 60);
+       seconds = timeLeft % 60;
+
+      minutes = minutes < 10 ? '0' + minutes : minutes;
+      seconds = seconds < 10 ? '0' + seconds : seconds;
+
+      display.textContent = minutes + ':' + seconds;
+
+
+      // startButton.disabled = enableStartButton;
+
+      if (timeLeft <= 0) {
+          clearInterval(countdownInterval);
+          display.textContent = '00:00';
+      } else {
+          timeLeft--;
+          // Additional functions such as score checking or alerts can be called here
+           checkScore(); 
+           alertTiming();
+      }
+  }, 1000);
+}
+
+
+
+const displayStartDialog = document.querySelector('.start-game')
+const startGameButton = document.querySelector('#start')
+
+
+window.addEventListener('load', function () {
+    displayStartDialog.showModal()
+})
+
+
+startGameButton.addEventListener('click', function () {
+  startCountdown();
+  enableDisableDragMap()
+  displayStartDialog.close()
+})
+
+
+// ///////////// NOT IN USE ANY MORE ///////////////////////
+// startButton.addEventListener('click', function() {
+//   startCountdown();
+//   enableDisableDragMap()
+// })
+
 
 /////////// FINAL SCORE AND RESULT ////////////////////////
 function checkScore() {
@@ -23,37 +103,56 @@ function checkScore() {
             replaceDiv()
         },2600)
         setTimeout(()=>{
-            alert("Perfect run\n click Reset button to play again")
-            // displayAlertBox()
-            // location.reload()
-        },4400)
+          const showTimeFinishPF= document.querySelector('#show-state-remaining')
+          showTimeFinishPF.textContent = elapsedMinutes + ':' + elapsedSeconds;
+          handlePefectRunModal()
+        },4200)
         
       }else if(totalMatch === 37 && totalUnMatch > 0 && timeLeft > 0){
         clearInterval(countdownInterval)
         addConfetti()
         cheerMe.finishingDrum()   
         setTimeout(()=>{
-          alert("Great job\n click Reset button to play again")
-          // location.reload()
+          const showTimeFinishGoodJob = document.querySelector('.show-state-remaining')
+          showTimeFinishGoodJob.textContent = elapsedMinutes + ':' + elapsedSeconds;
+          handlegoodJobModal()
         },2000)
-
-    }else if(totalMatch !== 37 && timeLeft === 1){
+        
+      }else if(totalMatch !== 37 && timeLeft === 1){
         setTimeout(()=>{
-            alert("Game over\n Restart")
+          let showStateRemaining = document.querySelector('.stateCount')
+              showStateRemaining.textContent = statesRemaining
+            handleGameOverModal()
         },1000)
       startButton.disabled = enableStartButton
-    }
-      return false
+      }
+      // NEWLY ADDED on 30th APRIL 2024 /////
+        else if(totalUnMatch >= 8){
+        let showStateRemaining = document.querySelector('.stateCount')
+        showStateRemaining.textContent = statesRemaining
+        handleGameOverModal()
+        clearInterval(countdownInterval)
+      }
+
   }
 
 
   // Alert Timing 
+  let flashTime 
+  let timeLabel
+
 function alertTiming() {
   if(timeLeft === 30){
     cheerMe.warning()
-  }else if(timeLeft === 290){
-    // clearInterval(countdownInterval) 120
-    // displayAlertBox()
+    display.style.backgroundColor = 'red'    
+  }else if(timeLeft === 119){
+    cheerMe.warning()
+    flashTime = document.querySelector('.show-time-remaining')
+    timeLabel = document.querySelector('.time-remaining-label')
+    flashTime.innerHTML =  minutes + ':' + seconds
+    timeLabel.innerHTML = "Mins remaining"
+    display.style.backgroundColor = '#ff9a3c'    
+     hideTImeRemaining()
   }
   else if(timeLeft === 10){
     cheerMe.alertEndofGame()
@@ -63,67 +162,12 @@ function alertTiming() {
 
 
 
-///////////// THE COUNTDOWN TIMER FUNCTION /////////////////////
-function startCountdown() {
-    let display = document.getElementById("show-time-div");
-    timeLeft = 300;
-    enableStartButton = true
-    // timeLeft = 180; 
-
-    countdownInterval = setInterval(function() {
-        let minutes = Math.floor(timeLeft / 60);
-        let seconds = timeLeft % 60;
-
-        // Add leading zero if necessary
-        minutes = minutes < 10 ? '0' + minutes : minutes;
-        seconds = seconds < 10 ? '0' + seconds : seconds;
-
-        // Display the time
-        display.textContent = minutes + ':' + seconds;
-
-        // Start Button disable while timer runs
-        startButton.disabled = enableStartButton
-
-        // Check if the countdown has finished
-        if (timeLeft <= 0) {
-            clearInterval(countdownInterval);
-            display.textContent = '00:00';
-        } else {
-            timeLeft--;
-            // checkScore(); // Call this function every second
-            checkScore()
-            alertTiming()
-        }
-
-        
-      }, 1000); // Update every second
-      // intervalRunning = true
+function hideTImeRemaining() {
+  setTimeout(()=>{
+    flashTime.classList.add("hide-show-time")
+    timeLabel.classList.add("hide-show-time")
+  },6000)
 }
-
-
-
-startButton.addEventListener('click', function() {
-  startCountdown();
-  enableDisableDragMap()
-})
-
-
-
-
-///////////////// PERHAPS I SHOULD ALLOW RESET BUTTON TO CARRY OUT THIS FUNCTION ///////////////////////
-function reActivateStartButton() {
-enableStartButton = false
-  if(timeLeft === 0){
-    startButton.disabled = enableStartButton
-  }
-}
-
-
-
-// function stopInterval() {
-//   clearInterval(countdownInterval);
-//   intervalRunning = false;
-// }
 
 
 
@@ -131,9 +175,14 @@ window.addEventListener('load', disableDragMap)
 
 
 
-// Export countdown variable along with the startCountdown function
-// export { startCountdown, intervalRunning, stopInterval};
+// Export  the startCountdown function
 export { startCountdown};
+
+
+
+
+
+
 
 
 
