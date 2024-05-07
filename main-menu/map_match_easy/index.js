@@ -11,7 +11,6 @@ import{
 
 }  from './each_SVG_State_ID.js'
 
-// import {match, unMatch, totalMatch, totalUnMatch} from './match_unmatch_scores.js';
 import {match, unMatch, totalMatch, totalUnMatch, countStatesRemaing, statesRemaining} from './match_unmatch_scores.js';
 
 import {startCountdown} from './Timer.js'
@@ -20,12 +19,6 @@ import {dragDivs, removeSingleNode} from './remove_map_when_match.js'
 import {shuffleMaps} from './shuffle_maps_functions.js';
 import {ResetButton} from './resetMap.js'
 
-/////////// TESTING CODE ////////////////////////
-// import alertBoxGameOver from './alertBox_gameOver.js'
-// import alertBoxGoodJob from './alertBox_goodJob.js'
-// import alertBoxPerfectRun from './alertBox_perfectRun.js'
-
-
 let countNumberSates = document.querySelector('.number-of-states')
 countNumberSates.innerHTML = statesRemaining
 
@@ -33,7 +26,7 @@ countNumberSates.innerHTML = statesRemaining
 
 
 // PLEASE ACTIVE THIS MODULE BEFOR DEPLOYMENT
-// import {disablecontextMenu} from './disableMapContextMenu.js'
+import {disablecontextMenu} from './disableMapContextMenu.js'
 
 
 // prevent default state of not allowing element to be over it

@@ -10,7 +10,7 @@ import { handlegoodJobModal, handlePefectRunModal, handleGameOverModal} from './
 //////////////// TESTING /////////////////////////
 import {statesRemaining} from './match_unmatch_scores.js';
 
-console.log(statesRemaining)
+// console.log(statesRemaining)
 
 
 

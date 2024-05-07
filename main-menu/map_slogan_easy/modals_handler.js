@@ -14,7 +14,7 @@ closeModal.addEventListener('click', ()=>{
 
 const playMedium = document.querySelector('#btn-medium')
 playMedium.addEventListener('click', ()=>{
-    location.href = '../map_match_medium/index.html'
+    location.href = '../map_slogan_medium/index.html'
 
 })
 
@@ -39,7 +39,7 @@ closePerfectRunModal.addEventListener('click', ()=>{
 
 const playMediumPF = document.querySelector('.btn-medium')
 playMediumPF.addEventListener('click', ()=>{
-    location.href = '../map_match_medium/index.html'
+    location.href = '../map_slogan_medium/index.html'
 })
 
 const restartGamePF = document.querySelector('.btn-restart')

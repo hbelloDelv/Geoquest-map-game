@@ -16,7 +16,6 @@ import {startCountdown} from './Timer.js'
 import {cheerMe} from './cheer_me.js'
 import {dragDivs, removeSingleNode} from './remove_map_when_match.js'
 import {shuffleMaps} from './shuffle_maps_functions.js';
-// import displayAlertBox from './alertBox.js'
 import {ResetButton} from './resetMap.js'
 
 let countNumberSates = document.querySelector('.number-of-states')
@@ -25,7 +24,7 @@ countNumberSates.innerHTML = statesRemaining
 
 
 // PLEASE ACTIVE THIS MODULE BEFOR DEPLOYMENT
-// import {disablecontextMenu} from './disableMapContextMenu.js'
+import {disablecontextMenu} from './disableMapContextMenu.js'
 
 
 // prevent default state of not allowing element to be over it
