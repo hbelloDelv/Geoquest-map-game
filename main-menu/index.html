@@ -26,7 +26,7 @@
 </head>
 <body>
     <div class="splash-screen">
-        <img class="fade-in" src="./splash_play.gif" alt="screen splash_video">
+        <img class="fade-in" src="./splash_play.gif" alt="screen splash_video" id="splash_play">
     </div>
     <div class="wrapper">
         <div class="main-menu-container">
@@ -35,19 +35,42 @@
                 <img src="./assets/GeoQuest.png" alt="Geoquest">
             </div>
             <div class="level-wrapper">
-                <h2>Select level</h2>
-                <div class="level-container">
-                    <button class="menu-btn" id="btn-level-one">Level One</button>
-                    <button class="menu-btn" id="btn-level-two">Level Two</button>
+                <div class="for-all-states">
+                    <div class="top-title">
+                        <h1>For all States</h1>
+                    </div>
+                        <h3>Select level</h3>
+                        <div class="level-container">
+                            <button class="menu-btn" id="btn-level-one">Level One</button>
+                            <button class="menu-btn" id="btn-level-two">Level Two</button>
+                        </div>             
+                    <div class="level-type-wrapper">
+                        <h2>Select difficulty</h2>
+                        <div class="level-type-container">
+                            <button class="menu-btn" id="btn-level-easy">Easy</button>
+                            <button class="menu-btn" id="btn-level-medium">Medium</button>
+                            <button class="menu-btn" id="btn-level-hard">Hard</button>
+                        </div>
+                    </div>
                 </div>
-            </div>
-            <div class="level-type-wrapper">
-                <h2>Select difficulty</h2>
-                <div class="level-type-container">
-                    <button class="menu-btn" id="btn-level-easy">Easy</button>
-                    <button class="menu-btn" id="btn-level-medium">Medium</button>
-                    <button class="menu-btn" id="btn-level-hard">Hard</button>
-                </div>
+                    <!--  -->
+                    <div class="for-state-LGAS">
+                        <div class="top-title">
+                            <h1>For States LGAs</h1>
+                        </div>
+                        <h3>Select State</h3>
+                        <div class="level-container">
+                            <button class="menu-btn" id="btn-level-one-Niger">Niger State</button>
+                        </div>
+                        <div class="level-type-wrapper">
+                            <h2>Select difficulty</h2>
+                            <div class="level-type-container">
+                                <button class="menu-btn" id="btn-level-easy-lga">Easy</button>
+                                <button class="menu-btn" id="btn-level-medium-lga">Medium</button>
+                                <button class="menu-btn" id="btn-level-hard-lga">Hard</button>
+                            </div>
+                        </div> 
+                    </div>
             </div>
         </div>
     </div>

@@ -27,6 +27,7 @@ body{
 }
 
 
+
 #map-menu{
     background-color:  rgb(3, 53, 3);
     display: grid;
@@ -523,22 +524,6 @@ background-color: rgb(250, 250, 177);
 
 
 
-@media all and (max-width: 768px) {
-    /* #container{    
-        display: flex;
-        flex-direction: row;
-   }
-    #map{    
-      width: 100%;
-   }
-
-    #right-section{    
-      width: 100%;   
-    overflow-x: scroll;
-   } */
-}
-
-
 
 .stateCount{
     /* background-color: red; */
@@ -549,3 +534,6 @@ background-color: rgb(250, 250, 177);
     align-items: center;
     font-size: 3rem;
 }
+
+
+

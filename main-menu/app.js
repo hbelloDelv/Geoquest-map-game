@@ -110,3 +110,60 @@ document.addEventListener('DOMContentLoaded', (e)=>{
             splashScreen.classList.add('display-none')
         },10000)
 })
+
+
+
+
+// ****************************************************************
+// 
+// STATES LGAs FEATURES BEGINS BELOW
+// 
+// ****************************************************************
+const    btnNigerState = document.querySelector('#btn-level-one-Niger')
+
+const    btnLevelEasyLGA = document.querySelector('#btn-level-easy-lga')
+const    btnLevelMediumLGA = document.querySelector('#btn-level-medium-lga')
+const    btnLevelHardLGA = document.querySelector('#btn-level-hard-lga')
+
+
+// DISABLE THE LGAs BUTTONS WHEN THE PAGE LOAD
+btnLevelEasyLGA.disabled = enableBtnLevelEasy
+btnLevelMediumLGA.disabled = enableBtnLevelMedium
+btnLevelHardLGA.disabled = enableBtnLevelHard
+
+
+
+
+let btnNigerStateTarget
+    btnNigerState.addEventListener('click',(e)=>{
+    btnNigerStateTarget =  e.target.id
+
+    enableBtnLevelEasy = false
+    enableBtnLevelMedium = false
+    enableBtnLevelHard = false
+    btnLevelEasyLGA.disabled = enableBtnLevelEasy
+    btnLevelMediumLGA.disabled = enableBtnLevelMedium
+    btnLevelHardLGA.disabled = enableBtnLevelHard
+
+
+    if(btnNigerStateTarget === "btn-level-one-Niger"){
+        
+        btnLevelEasyLGA.addEventListener('click', ()=>{
+            window.location.href = './states_lga_match_map/niger_state_map_match_easy/index.html'
+        })
+        
+        btnLevelMediumLGA.addEventListener('click', ()=>{
+    
+            window.location.href =  './states_lga_match_map/niger_state_map_match_medium/index.html'
+        })
+        
+        btnLevelHardLGA.addEventListener('click', ()=>{
+            window.location.href =  './states_lga_match_map/niger_state_map_match_hard/index.html'
+        })
+
+    }
+
+    console.log(btnNigerState)
+
+})
+

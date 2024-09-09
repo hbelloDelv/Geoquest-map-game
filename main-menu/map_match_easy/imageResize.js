@@ -197,7 +197,7 @@ resizeImage.jigawa.addEventListener('dragstart',(e)=>{
 })
 
 resizeImage.kaduna.addEventListener('dragstart',(e)=>{
-   e.dataTransfer.setDragImage(images.kaduna, 90, 67);
+   e.dataTransfer.setDragImage(images.kaduna, 90, 67); 
 })
 
 resizeImage.kano.addEventListener('dragstart',(e)=>{
