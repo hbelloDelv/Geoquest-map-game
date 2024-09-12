@@ -27,7 +27,7 @@ countNumberSates.innerHTML = statesRemaining
 
 
 // PLEASE ACTIVE THIS MODULE BEFOR DEPLOYMENT
-// import {disablecontextMenu} from './disableMapContextMenu.js'
+import {disablecontextMenu} from './disableMapContextMenu.js'
 
 
 // prevent default state of not allowing element to be over it
@@ -648,4 +648,4 @@ WushishiLGAId.addEventListener('drop', (e)=>{
 
 export {countNumberSates}
 // The index file must load before the maps is reshufle
-// shuffleMaps()
+shuffleMaps()
